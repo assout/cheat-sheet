@@ -1,0 +1,8 @@
+# {{_title_}}
+
+Date: {{_date_}}
+Tags: [{{_tags_}}]
+Categories: [{{_categories_}}]
+
+---
+
