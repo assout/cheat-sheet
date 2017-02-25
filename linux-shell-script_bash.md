@@ -811,7 +811,7 @@ Refs: [DigiLoog » Linuxの各圧縮コマンド実行速度と圧縮率を測�
             nkf -w --overwrite `find -name "*.java"`
 
     - Caution:
-        - msysgitのだとnkf32.exe,nkfwin32.exeが入ってて後者はうまく動かなかった
+        - msysgitのだとnkf32.exe,nkfwin32.exeが入っていて後者はうまく動かなかった
 
 - nohup - ログアウトしてもバックグラウンドジョブを継続する
 
