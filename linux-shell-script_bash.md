@@ -310,6 +310,9 @@ Important:
 
 ## Commands
 
+- grep
+- sed
+
 ### (De)Compression commands
 
 - 7z - 7-zip操作
@@ -419,11 +422,10 @@ Refs: [DigiLoog » Linuxの各圧縮コマンド実行速度と圧縮率を測�
 
 ### Performance
 
-- TODO
-    - free
-    - sar
-    - top
-    - vmstat
+- free - TODO
+- sar - TODO
+- top - TODO
+- vmstat - TODO
 
 ### Network (iproute2)
 
@@ -441,6 +443,19 @@ Refs: [DigiLoog » Linuxの各圧縮コマンド実行速度と圧縮率を測�
 
 ### Useful commands
 
+- chown - 再帰的に所有者変更 :
+- cut - 文字列を切り出す :
+- diff - 差分をとる
+- du - ディレクトリサイズ表示 :
+- find - 検索：
+- gpasswd - グループ操作
+- groups - ユーザの所属グループを表示
+- less, tail - ファイル内容を監視
+- ln - (シンボリック）リンクを貼る
+- ls - ファイルリスト表示
+- lsof - プロセスが使用しているファイルを調べるRefs: [lsofの使い方 - プロセスが使用中のファイルを調べる - うまいぼうぶろぐ](http://hogem.hatenablog.com/entry/20070223/1172221315)
+- man - マニュアル閲覧
+- nkf - 文字コード変換Refs: [文字コード変換コマンドの nkfの使い方と実例をまとめました。 - それマグで！](http://takuya-1st.hatenablog.jp/entry/20100511/1273585953)
 - nohup - ログアウトしてもバックグラウンドジョブを継続する
 - paste - 各ファイルの行を結合する
 - pgrep - プロセスをgrep
