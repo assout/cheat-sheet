@@ -441,8 +441,8 @@ Refs:
 - モードライン modeline:
 
         vim:tw=78:norl:
-        <!-- vim:set ft=markdown: -->
-        " vim:ft=sh:
+        <!-- vim:set filetype=markdown: -->
+        " vim:filetype=sh:
 
 - :ls結果の記号の見方 TODO: ちゃんと書く
     - `a` : alternate
