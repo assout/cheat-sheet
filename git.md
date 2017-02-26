@@ -6,8 +6,6 @@ Categories: []
 
 ---
 
-## Basic usage
-
 ## Technique
 
 - 初回push - Refs: [githubのレポジトリに初回pushするとき - MEMOcho-](http://jsapachehtml.hatenablog.com/entry/2014/03/14/205721)
