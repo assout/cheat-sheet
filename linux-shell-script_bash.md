@@ -33,6 +33,25 @@ Categories:[]
 
         if [ -e fooFile ] ; then ...
 
+#### 比較演算子
+
+- 文字列1と文字列2は等しいか？
+
+        test 文字列1 = 文字列2
+        $ test "abc" = "abc" ; echo $?
+        0
+        $ test "abc" = "def" ; echo $?
+        1
+        比較する 2つの文字列が同一である場合のみ真 (終了ステータスが 0) となっている。
+
+- 文字列1と文字列2は等しくないか？
+
+        test 文字列1 != 文字列2
+        $ test "abc" != "abc" ; echo $?
+        1
+        $ test "abc" != "def" ; echo $?
+        0
+
 ### Idiom, Notes
 
 - 標準[エラー]出力

@@ -1,0 +1,13 @@
+
+/home/oji/.ghq/github.com/assout/memo/aphorism.md
+  15:15  error  "細部" が連続して2回使われています。  preset-ja-technical-writing/ja-no-successive-word
+  16:55  error  Disallow to use "?"                   preset-ja-technical-writing/no-exclamation-question-mark
+  16:59  error  Disallow to use "?"                   preset-ja-technical-writing/no-exclamation-question-mark
+  16:63  error  Disallow to use "?"                   preset-ja-technical-writing/no-exclamation-question-mark
+  18:21  error  Disallow to use "！"                  preset-ja-technical-writing/no-exclamation-question-mark
+  35:28  error  Disallow to use "！"                  preset-ja-technical-writing/no-exclamation-question-mark
+  43:1   error  Don't repeat "e.g." in 2 phrases      preset-ja-technical-writing/no-start-duplicated-conjunction
+  53:9   error  "途中" が連続して2回使われています。  preset-ja-technical-writing/ja-no-successive-word
+
+✖ 8 problems (8 errors, 0 warnings)
+
