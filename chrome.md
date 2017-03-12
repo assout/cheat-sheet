@@ -11,6 +11,7 @@ Categories: []
 ### List
 
 - `AutoPagerize`
+- `Copy as Markdown`
 - `Defenestrate`
 - `Disable Extensions Temporarily`
 - `Fire Shot` : 1ページ内スクロールしてきゃぷれる。1回毎に保存先聞かれるけど他にいいのも無さそうなので。
@@ -20,7 +21,6 @@ Categories: []
 - `JSONView`
 - `LastPass`
 - `LivePage`
-- `Markdown Linker` : markdownでの[title]<url>形式を作成してくれる。
 - `Moqups`
 - `Octotree`
 - `PlantUML Viewer`
@@ -97,6 +97,11 @@ Categories: []
 - `Screencastify` : 画面キャプチャ(一部無料) : gif化が有料っぽいので
 
 ### Details
+
+#### Copy as Markdown
+
+- chrome://extensions/ : Keyboard shortcuts
+    - current tab: `Ctrl+Y`
 
 #### cVim(chromium-vim)
 
