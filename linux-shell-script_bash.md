@@ -64,10 +64,11 @@ Categories:[]
     - 標準出力とエラー出力両方をリダイレクト :
 
             command >& /dev/null
-            command > /dev/null 2>&1
+            command > /dev/null 2>&1 # legacy
 
     - 標準出力とエラー出力両方を別コマンドに渡す :
 
+            command |& less
             command 2>&1 | less
 
     - 標準エラー出力のみを別コマンドに渡す :
