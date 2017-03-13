@@ -116,6 +116,10 @@ Keys
 
             P
 
+    - open multiple links
+
+            mf
+
 - Visual/Caret Mode
     - copys the current selection
 
