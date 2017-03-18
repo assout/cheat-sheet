@@ -64,7 +64,7 @@ Categories: []
 - `hub`                               : [GitHub - github/hub: hub helps you win at git.](https://github.com/github/hub)
 - `kSar`                              : [ksar : a sar grapher 日本語情報トップページ - OSDN](https://osdn.jp/projects/sfnet_ksar/)
 - `nkf`                               : 文字コード変換 : [nkf.exe nkf32.dll Windows用の詳細情報 : Vector ソフトを探す！](http://www.vector.co.jp/soft/win95/util/se295331.html)
-- ` `                                : pomodoro by bash. Refs: [GitHub - chrismdp/p: A simple yet powerful pomodoro tracker in pure Shell](https://github.com/chrismdp/p)
+- `p`                                : pomodoro by bash. Refs: [GitHub - chrismdp/p: A simple yet powerful pomodoro tracker in pure Shell](https://github.com/chrismdp/p)
 - `peco`                              : [GitHub - peco/peco: Simplistic interactive filtering tool](https://github.com/peco/peco)
 - `侍`
 
@@ -431,6 +431,10 @@ Refs: [mintty-color-schemes/base16-tomorrow.minttyrc at master ・ oumu/mintty-c
 - vimのundo file用のディレクトリ作成
 
         mkdir -p ~/.cache/undo
+
+- vimのbackup file用のディレクトリ作成
+
+        mkdir -p ~/.vim/backup
 
 - vim-plug
 

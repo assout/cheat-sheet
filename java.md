@@ -87,9 +87,9 @@ Categories: []
 
 - クラスパス上のファイル読み込み
 
-        TestMain.class.getClassLoader().getResouce("foo/bar/test.properties"));
-        TestMain.class.getResouce("/foo/bar/test.properties"));
-        TestMain.class.getResouce("test.properties"));
+        TestMain.class.getClassLoader().getResources("foo/bar/test.properties"));
+        TestMain.class.getResources("/foo/bar/test.properties"));
+        TestMain.class.getResources("test.properties"));
         // getResourceAsStreamも同様
         // 基本位置に依存したくないのでgetClassLoaser().getResource()を使えばよさそう
 

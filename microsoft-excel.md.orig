@@ -114,7 +114,6 @@ Categories: []
 - 列名を利用してVLOOKUP
 
         =VLOOKUP($B3,データシート!$A$2:$AO$1000,MATCH(C1,データシート!1:1,),FALSE)
-        // 実用上はmatch結果をワーク行に出力しておく（行ごとにmatch計算すると重い）
 
 - シート名を取得
 
@@ -202,23 +201,6 @@ Categories: []
         置換後文字列: Ctrl+J
 
 ## Rules
-
-### Sheet structure - シート構成
-
-以下のシート構成とする
-
-- data, 元データ,       濃い赤
-- proc, 処理(計算など), 黄
-- view, 表示,           青
-- def,  定義,           紫
-- bk,   不要なもの,     黒
-
-※原則以下の依存しか許容しない。
-
-- proc -> data
-- view -> proc
-
-※簡単な計算は`data`シートに含めてよい
 
 ### Style - 書式
 
