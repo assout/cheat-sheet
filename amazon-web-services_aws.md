@@ -20,4 +20,3 @@ Categories: []
 
         aws ec2 describe-instance
 
-
