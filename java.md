@@ -115,37 +115,13 @@ UncheckedIOException例外クラスは、従来からある検査例外java.io.I
     - コンストラクタをpackage privateスコープにする
     - テストソースの同一パッケージにファクトリユーテリティ作る
 
-## jcmdユーティリティ
-
-- Javaプロセス表示
-
-        jcmd
-
-- スレッドダンプ取得
-
-        jcmd ${pid} Thread.print
-
 ## Other command
 
-- Javadoc生成
-
-        javadoc -d D:/admin/Desktop/javadoc -encoding "utf-8" -charset "utf-8" *.java
-
-- jar解凍
-
-        jar xvf hoge.jar
-
-- jarの中身を確認
-
-        jar tf hoge.jar
-
-- スレッドダンプ取得(JDK7以降はjcmd推奨)
-
-        jstack {pid}
-
-- JavaのプロセスID表示(JDK7以降はjcmd推奨)
-
-        jps
+- `jar`: jar圧縮、解凍など
+- `javadoc`: Javadoc生成など
+- `jcmd`: スレッドダンプ取得などのユーティリティ
+- `jps`: JavaのプロセスID表示(JDK7以降はjcmd推奨)
+- `jstack`: スレッドダンプ取得(JDK7以降はjcmd推奨)
 
 ## Memo
 
