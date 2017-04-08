@@ -175,14 +175,13 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 - `Eclipse Class Decompiler` : From Marketplace
 - `Eclipse Explorer for Java` : From Marketplace : `EasyShell`でもできるがキーストロークが長いので。 : TODO: 1回しか実行できない
 - `Eclipse Metrics Plugin(frank sauer)` : <http://metrics.sourceforge.net/update>
-- `Eclipse Postfix Code Completion Plugin` : <https://raw.githubusercontent.com/trylimits/Eclipse-Postfix-Code-Completion/master/org.eclipse.jdt.postfixcompletion.updateSite/target/site/>
 - `FindBugs Eclipse Plugin` : From Marketplace
 - `Groovy Eclipse` : <http://dist.springsource.org/snapshot/GRECLIPSE/e4.5/>
 - `HTML Editor (WTP) Mars` : From Marketplace
 - `JBoss Tools - FreeMaker IDE` : From Marketplace
 - `JBoss Tools - JBoss OpenShift Tools` : From Marketplace
 - `Java Decompiler Eclipse Plug-in` : <http://jd.benow.ca/jd-eclipse/update> : required Microsoft Visual C++ 2008 SP1 Redistributable Package
-- `Lombok`
+- `JUnitLoop`
 - `M2Eclipse(m2e)` : built-in
 - `Marketplace Client` : built-in
 - `Plant UML` : <http://plantuml.sourceforge.net/updatesitejuno/>
@@ -198,7 +197,9 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 ### Useless
 
 - `Eclipse Color Theme`  : いらない
+- `Eclipse Postfix Code Completion Plugin` : <https://raw.githubusercontent.com/trylimits/Eclipse-Postfix-Code-Completion/master/org.eclipse.jdt.postfixcompletion.updateSite/target/site/> : 結局使わない
 - `File Bookmark Plugin` : <http://sourceforge.jp/projects/filebookmark/> : Eclipse Luna だと使えないっぽい。。
+- `Lombok` : 不要にライブラリ使わない
 - `Subversive`           : Subversionもう使わない。
 - `m2e-subversive`       : Subversionもう使わない。: Check out as Maven Project が出るようになる: File - import - Maven - Check out Maven Projects from SCM - m2e Marketplace - m2e-subversive
 
