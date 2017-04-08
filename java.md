@@ -145,7 +145,7 @@ UncheckedIOException例外クラスは、従来からある検査例外java.io.I
 
 Refs: [Javaアプリケーション メモ(Hishidama's Java-Application Memo)](http://www.ne.jp/asahi/hishidama/home/tech/java/application.html#Java-version)
 
-#### クロスコンパイルオプション
+クロスコンパイルオプション
 
 -target version
 
@@ -154,6 +154,12 @@ Refs: [Javaアプリケーション メモ(Hishidama's Java-Application Memo)](h
 \* 太字引用者
 
 Refs: [javac - Java プログラミング言語コンパイラ](http://docs.oracle.com/javase/jp/7/technotes/tools/solaris/javac.html)
+
+### パッケージ名登録サービス
+
+[Package Registration Page](http://www.java-conf.gr.jp/Package/naming/index.html)
+
+`jp.gr.java_conf.assout`
 
 ## JUnit
 
