@@ -11,7 +11,6 @@ Categories: []
 ### List
 
 - `AutoPagerize`
-- `Copy as Markdown`
 - `Defenestrate`
 - `Disable Extensions Temporarily`
 - `Fire Shot` : 1ページ内スクロールしてきゃぷれる。1回毎に保存先聞かれるけど他にいいのも無さそうなので。
@@ -21,6 +20,7 @@ Categories: []
 - `JSONView`
 - `LastPass`
 - `LivePage`
+- `Markdown Linker` : markdownでの[title]<url>形式を作成してくれる。`cmd+ctrl+c`でも行ける。
 - `Moqups`
 - `Octotree`
 - `PlantUML Viewer`
@@ -40,32 +40,6 @@ Categories: []
 - `textlint`
 - `μBlock Origin`
 - `カラフル英語品詞分類`
-
-### Display order
-
-1. `Save to Pocket`
-1. `Web Cliper for Trello`
-1. `Session Buddy`
-1. `Instant Translate`
-1. `IE Tab`
-1. `LivePage`
-1. `ato-ichinen`
-1. `japanese-search`
-1. `PlantUML Viewer`
-1. `Octotree`
-1. `μBlock Origin`
-1. `Defenestrate`
-1. `AutoPagerize`
-1. `cVim(chromium-vim)`
-1. `JSONView`
-1. `Markdown Linker`
-1. `Wiki Search for GitHub`
-1. `Github Toc`
-1. `Stylish`
-1. `カラフル英語品詞分類`
-1. `LastPass`
-1. `Scrum for Trello`
-1. `Disable Extensions Temporarily`
 
 ### Unused
 
@@ -97,11 +71,6 @@ Categories: []
 - `Screencastify` : 画面キャプチャ(一部無料) : gif化が有料っぽいので
 
 ### Details
-
-#### Copy as Markdown
-
-- chrome://extensions/ : Keyboard shortcuts
-    - current tab: `Ctrl+Y`
 
 #### cVim(chromium-vim)
 
