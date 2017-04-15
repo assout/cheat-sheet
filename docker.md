@@ -124,7 +124,7 @@ Refs. <https://hub.docker.com/r/rastasheep/ubuntu-sshd/>
 
     # run
     docker run -d -p 22:22 --name test_sshd rastasheep/ubuntu-sshd:14.04
-    # login
+    # login (password=root)
     ssh root@localhost
 
 ### MySQL

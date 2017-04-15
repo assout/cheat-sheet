@@ -27,12 +27,6 @@ Categories:[]
         fooArray+=("piyo")
         fooArray+=("hogera")
 
-#### test command
-
-- ファイルが存在するか
-
-        if [ -e fooFile ] ; then ...
-
 #### 比較演算子
 
 - 文字列1と文字列2は等しいか？
@@ -259,7 +253,9 @@ Refs: [Shell Style Guide](https://google.github.io/styleguide/shell.xml)
 Rules
 
 - Naming Conventions - 命名規則
+    - Function Names : `function`キーワードはつける(vimでindentされるように)
     - Source Filenames - ファイル名： Lowercase
+
 
 ### Refs.
 
