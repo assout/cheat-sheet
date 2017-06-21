@@ -261,8 +261,8 @@ Refs: [Can ${var} parameter expansion expressions be nested in bash? - Stack Ove
 - Naming Conventions - 命名規則
     - Function Names - 1
         - Google: `function`キーワードは任意(一貫性があれば良い)
-        - Rule: `function`キーワードはつける
-        - 理由: vimでindentされるように。
+        - Rule: `function`キーワードはつけない
+        - 理由: 楽な方に倒す
     - Function Names - 2
         - Google: Separate libraries with `::`
         - Rule: Separate libraries with `__`
