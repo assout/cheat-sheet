@@ -233,8 +233,9 @@ Refs: [Can ${var} parameter expansion expressions be nested in bash? - Stack Ove
         piyo
         EOS
 
-- 簡易ヒアドキュメント？　(ぐぐっても出てこない。`tldr bc`でみつけた）
+- ヒア文字列 Here Strings (`man bash`)
 
+        # 単一の文字列を標準入力のコマンドに追加します。
         cat <<< abc
         bc <<< "1 + 2"
 
@@ -248,14 +249,31 @@ Refs: [Can ${var} parameter expansion expressions be nested in bash? - Stack Ove
 
 ### Style Guide - スタイルガイド（コーディング基準）
 
-Refs: [Shell Style Guide](https://google.github.io/styleguide/shell.xml)
+原則Googleの基準に則る。 Refs. [Shell Style Guide](https://google.github.io/styleguide/shell.xml)
 
-Rules
+以下に特に重要な箇所を抜粋。
 
 - Naming Conventions - 命名規則
-    - Function Names : `function`キーワードはつける(vimでindentされるように)
     - Source Filenames - ファイル名： Lowercase
 
+例外事項や、Google基準では定められていなないもの。
+
+- Naming Conventions - 命名規則
+    - Function Names - 1
+        - Google: `function`キーワードは任意(一貫性があれば良い)
+        - Rule: `function`キーワードはつける
+        - 理由: vimでindentされるように。
+    - Function Names - 2
+        - Google: Separate libraries with `::`
+        - Rule: Separate libraries with `__`
+        - 理由: `::`だとctagsが動かないため
+- Formatting
+    - Indentation: 
+        - Google: Indent 2 spaces. No tabs.
+        - Rule: ハードタブにする。
+        - 理由:
+            - Vimのデフォルトがハードタブであり、vimrcなしの環境でscript編集することが多いため
+            - 関数内でヒアドキュメントをインデントする場合`<<-EOF`とするとハードタブの場合無視してくれる
 
 ### Refs.
 
