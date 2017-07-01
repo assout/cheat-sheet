@@ -34,9 +34,10 @@ Categories: []
 
 ## Add-in
 
-- Relax Tools                                      : 主にオートシェイプ内文字列検索のための使用 : [Releases · RelaxTools/RelaxTools-Addin](https://github.com/RelaxTools/RelaxTools-Addin/releases)
-- taskline - Excelガントチャート                : [EXCELマクロでガントチャートを作ってみた - ITレシピ](http://mitsuyahiromi.sakura.ne.jp/fswiki/wiki.cgi?page=EXCEL%A5%DE%A5%AF%A5%ED%A4%C7%A5%AC%A5%F3%A5%C8%A5%C1%A5%E3%A1%BC%A5%C8%A4%F2%BA%EE%A4%C3%A4%C6%A4%DF%A4%BF)
-- Excelパスワード瞬時解除ForExcel2007/2010/2013 : [エクセルパスワード瞬時解除ForExcel2007/2010/2013の詳細情報 : Vector ソフトを探す！](http://www.vector.co.jp/soft/winnt/business/se499814.html)
+- Relax Tools:                                   主にオートシェイプ内文字列検索のための使用:                  [Releases · RelaxTools/RelaxTools-Addin](https: //github.com/RelaxTools/RelaxTools-Addin/releases)
+- taskline - Excelガントチャート:                [EXCELマクロでガントチャートを作ってみた - ITレシピ](http:   //mitsuyahiromi.sakura.ne.jp/fswiki/wiki.cgi?page=EXCEL%A5%DE%A5%AF%A5%ED%A4%C7%A5%AC%A5%F3%A5%C8%A5%C1%A5%E3%A1%BC%A5%C8%A4%F2%BA%EE%A4%C3%A4%C6%A4%DF%A4%BF)
+- Excelパスワード瞬時解除ForExcel2007/2010/2013: [エクセルパスワード瞬時解除ForExcel2007/2010/2013の詳細情報: Vector ソフトを探す！](http:                    //www.vector.co.jp/soft/winnt/business/se499814.html)
+- VimExel
 
 ### Deprecated
 
@@ -123,6 +124,11 @@ Categories: []
 - 連番生成
 
         =IF(ISTEXT(A1), 1, A1+1)
+        =A1+1
+
+    - これがベストっぽい
+
+            =ROW()-ROW(テーブル2[[#見出し],['#]])
 
 ## Useful Feature
 
@@ -160,7 +166,8 @@ Categories: []
     1. データ - リンクの編集 -> リンク元を確認
     1. 検索 - 検索する文字列:↑で確認したリンク元のファイル名 検索場所:ブック 検索対象:数式
     1. 修正 or 削除
-    \* たまに見つからない。(その場合は上記[手順1.]でリンクの解除をすればよさそう)
+        - \* たまに見つからない。(その場合は上記[手順1.]でリンクの解除をすればよさそう)
+            - -> リンクの解除ができない場合、条件付き書式を確認する(Refs: [リンクの編集、解除ができない - マイクロソフト コミュニティ](https://answers.microsoft.com/ja-jp/msoffice/forum/msoffice_excel-mso_other/%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AE%E7%B7%A8/67b0f536-03bb-4738-9198-1415b8845aae))
 - 検索・置換時にワイルドカードを使う
     - `*` - 任意の文字
     - `?` - 任意の一文字
@@ -207,10 +214,10 @@ Categories: []
 
 以下のシート構成とする
 
-- data, 元データ,       濃い赤
+- data, 元データ,       色なし
 - proc, 処理(計算など), 黄
 - view, 表示,           青
-- def,  定義,           紫
+- def,  定義,           黒
 - bk,   不要なもの,     黒
 
 ※原則以下の依存しか許容しない。
