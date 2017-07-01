@@ -28,6 +28,7 @@ Categories: []
 - `Save to Pocket`
 - `Scrum for Trello`
 - `Session Buddy`
+- `Sourcegraph for GitHub`
 - `Stylish`
 - `Web Cliper for Trello`
 - `Wiki Search for GitHub`
