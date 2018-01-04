@@ -34,9 +34,10 @@ Categories: []
 
 ## Add-in
 
-- Relax Tools                                      : 主にオートシェイプ内文字列検索のための使用 : [Releases · RelaxTools/RelaxTools-Addin](https://github.com/RelaxTools/RelaxTools-Addin/releases)
-- taskline - Excelガントチャート                : [EXCELマクロでガントチャートを作ってみた - ITレシピ](http://mitsuyahiromi.sakura.ne.jp/fswiki/wiki.cgi?page=EXCEL%A5%DE%A5%AF%A5%ED%A4%C7%A5%AC%A5%F3%A5%C8%A5%C1%A5%E3%A1%BC%A5%C8%A4%F2%BA%EE%A4%C3%A4%C6%A4%DF%A4%BF)
-- Excelパスワード瞬時解除ForExcel2007/2010/2013 : [エクセルパスワード瞬時解除ForExcel2007/2010/2013の詳細情報 : Vector ソフトを探す！](http://www.vector.co.jp/soft/winnt/business/se499814.html)
+- Relax Tools:                                   主にオートシェイプ内文字列検索のための使用:                  [Releases · RelaxTools/RelaxTools-Addin](https: //github.com/RelaxTools/RelaxTools-Addin/releases)
+- taskline - Excelガントチャート:                [EXCELマクロでガントチャートを作ってみた - ITレシピ](http:   //mitsuyahiromi.sakura.ne.jp/fswiki/wiki.cgi?page=EXCEL%A5%DE%A5%AF%A5%ED%A4%C7%A5%AC%A5%F3%A5%C8%A5%C1%A5%E3%A1%BC%A5%C8%A4%F2%BA%EE%A4%C3%A4%C6%A4%DF%A4%BF)
+- Excelパスワード瞬時解除ForExcel2007/2010/2013: [エクセルパスワード瞬時解除ForExcel2007/2010/2013の詳細情報: Vector ソフトを探す！](http:                    //www.vector.co.jp/soft/winnt/business/se499814.html)
+- VimExel
 
 ### Deprecated
 
@@ -123,6 +124,11 @@ Categories: []
 - 連番生成
 
         =IF(ISTEXT(A1), 1, A1+1)
+        =A1+1
+
+    - これがベストっぽい
+
+            =ROW()-ROW(テーブル2[[#見出し],['#]])
 
 ## Useful Feature
 
@@ -136,6 +142,12 @@ Categories: []
 
 ## Tips
 
+### 日付、時刻
+
+- 時刻の加減算
+    - "09:20" + TIME(1,45,0)
+
+### その他
 - グラフでX軸とY軸を[グラフツール - 行/列の入れ替え]で入れ替えれる
 - グラフで基準線(目標線)を入れる
     - 目標値のデータを追加し、目標値のグラフだけを指定し[グラフの種類を変更]
@@ -160,7 +172,8 @@ Categories: []
     1. データ - リンクの編集 -> リンク元を確認
     1. 検索 - 検索する文字列:↑で確認したリンク元のファイル名 検索場所:ブック 検索対象:数式
     1. 修正 or 削除
-    \* たまに見つからない。(その場合は上記[手順1.]でリンクの解除をすればよさそう)
+        - \* たまに見つからない。(その場合は上記[手順1.]でリンクの解除をすればよさそう)
+            - -> リンクの解除ができない場合、条件付き書式を確認する(Refs: [リンクの編集、解除ができない - マイクロソフト コミュニティ](https://answers.microsoft.com/ja-jp/msoffice/forum/msoffice_excel-mso_other/%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AE%E7%B7%A8/67b0f536-03bb-4738-9198-1415b8845aae))
 - 検索・置換時にワイルドカードを使う
     - `*` - 任意の文字
     - `?` - 任意の一文字
@@ -207,10 +220,10 @@ Categories: []
 
 以下のシート構成とする
 
-- data, 元データ,       濃い赤
+- data, 元データ,       色なし
 - proc, 処理(計算など), 黄
 - view, 表示,           青
-- def,  定義,           紫
+- def,  定義,           黒
 - bk,   不要なもの,     黒
 
 ※原則以下の依存しか許容しない。
@@ -270,13 +283,13 @@ TODO: もっと簡単にできないか
 ### Cell color - セル色(前景/背景色)
 
 - font color
-    - 数式セル : 標準の色 - 紫
+    - 数式セル : 標準の色 - 赤,アクセント 2
 
 以前は背景色を変えていたが、テーブルと親和性低い(デフォルトだと一行ごとに背景色変わるため)のでやめる
 
 \* 前述した[ホーム - 編集 - 検索と選択- 数式]から選択し設定する
 
-- TODO: ただし空白セルが数式か本当の空白か区別がつかない
+- TODO: ただし空白セルが数式か本当の空白か区別がつかない (数式の結果が空白でなく-などになるように統一すれば良さそう)
 - TODO: 自動設定したい
 
 ## Refs

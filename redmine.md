@@ -6,11 +6,6 @@ Categories: []
 
 ---
 
-## Textile記法
-
-- 画像埋め込み
-        !hoge.jpg!
-
 ## Update rules - 更新方針
 
 ### General - 全般的な方針
@@ -77,4 +72,36 @@ Examples
 - Bugs - In Progress
 - Bugs - Resolved
 
+## Settings - 設定
+
+- Administration - Settings
+    - General
+        - Application title : Any!
+        - Text formatting: Markdown
+        - Cache formatted text : Checked
+    - Display
+        - Users display format : 山田 太郎
+        - Use Gravatar user icons : Checked
+        - Default Gravatar image : Identicons
+    - API
+        - Enable REST web service: Checked
+    - Projects
+        - Default enabled modules for new projects
+            - Documents,Files: Unchecked
+    - Email notifications
+        - Emission email address: "Jonh do" <mail address>
+        - Select actions for which email notifications should be sent.
+            - Issue added
+            - Issue updated
+                - Status updated
+            - News added
+            - Message added
+            - Wiki page added
+            - Wiki page updated
+
+## Wiki
+
+### マクロ
+
+チャイルドページ一覧を表示: `{{child_pages}}`
 

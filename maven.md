@@ -78,3 +78,9 @@ Refs:
             <maven.compiler.source>${java.version}</maven.compiler.source>
         </properties>
 
+
+## Tips
+
+- ワークスペース解決が出来なくなることがあるが、`.project`,`.settings`を削除しインポートし直すと直ることがある
+    - -> だめなことが多い。暫定対応としてはビルドパスの構成からプロジェクト参照を追加(Maven依存より優先)
+

@@ -67,6 +67,11 @@ Categories: []
 
 ### Views
 
+#### Project Explorer
+
+- View Menu
+    - Customize View - Content - Nested Projects: Checked.
+
 #### Package Explorer
 
 - View Menu
@@ -93,9 +98,7 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 
 - General
     - Appearance
-        - Colors and Font
-            - Basic
-                - Text Font : Ricty Diminished : 10
+        - Colors and Font theme: Classsic Theme
     - Editors
         - AnyEdit Tools
             - Auto - Convert
@@ -140,6 +143,7 @@ TasksにPackage Explorerで選択した範囲のみ表示する
                     - Enable line comment formatting : uncheck
     - Editor
         - Content Assist
+            - Auto Activation - Auto activation delay (ms): 80
             - Advanced
                 - Default Proposal Kinds
                     - Java Non-Type Proposals : checked!(候補が重複して表示されるように見えるので、代わりに Intelligent Java Proposals をunchecked! - > 今度はほしい時にだめになった..
@@ -176,10 +180,12 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 - `Eclipse Explorer for Java` : From Marketplace : `EasyShell`でもできるがキーストロークが長いので。 : TODO: 1回しか実行できない
 - `Eclipse Metrics Plugin(frank sauer)` : <http://metrics.sourceforge.net/update>
 - `FindBugs Eclipse Plugin` : From Marketplace
-- `Groovy Eclipse` : <http://dist.springsource.org/snapshot/GRECLIPSE/e4.5/>
 - `HTML Editor (WTP) Mars` : From Marketplace
-- `JBoss Tools - FreeMaker IDE` : From Marketplace
-- `JBoss Tools - JBoss OpenShift Tools` : From Marketplace
+- `JBoss Tools` : From Marketplace
+    - `Contexts and Dependency Injection Tools`
+    - `FreeMaker IDE`
+    - `JBoss JAX-RS Tools`
+    - `JBoss OpenShift Tools`
 - `Java Decompiler Eclipse Plug-in` : <http://jd.benow.ca/jd-eclipse/update> : required Microsoft Visual C++ 2008 SP1 Redistributable Package
 - `JUnitLoop`
 - `M2Eclipse(m2e)` : built-in
@@ -190,6 +196,7 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 - `ShellEd` : <http://sourceforge.net/projects/shelled/files/shelled/update/>
 - `StepCounter` : <https://github.com/takezoe/stepcounter>
 - `TM Terminal` : From Marketplace
+- `UCDetector` : <http://ucdetector.sourceforge.net/update>
 - `Vrapper` : <http://vrapper.sourceforge.net/update-site/stable> : MarketplaceにもあるがpluginをどうせURLから入れる。unstableのほうが機能豊富
 - `eclipse-pmd` : From Marketplace TODO 不要？
 - `pmd-eclipse-plugin` : From Marketplace
@@ -200,6 +207,7 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 - `Eclipse Postfix Code Completion Plugin` : <https://raw.githubusercontent.com/trylimits/Eclipse-Postfix-Code-Completion/master/org.eclipse.jdt.postfixcompletion.updateSite/target/site/> : 結局使わない
 - `File Bookmark Plugin` : <http://sourceforge.jp/projects/filebookmark/> : Eclipse Luna だと使えないっぽい。。
 - `Lombok` : 不要にライブラリ使わない
+- `SimplePropertyEditor` : 軽いらしいがフォントが見づらい。`Ctrl + /`でのコメントアウトトグルが効かない。
 - `Subversive`           : Subversionもう使わない。
 - `m2e-subversive`       : Subversionもう使わない。: Check out as Maven Project が出るようになる: File - import - Maven - Check out Maven Projects from SCM - m2e Marketplace - m2e-subversive
 

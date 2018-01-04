@@ -38,8 +38,10 @@ Categories: []
 - `Cabal`                             : For ShellCheck
 - `Ctrl2cap`                          : キーボード配置変更(Caps LockをCtrlにする) : [Ctrl2cap](https://technet.microsoft.com/ja-jp/sysinternals/bb897578.aspx)
 - `Eclipse`                           : Refs: [eclipse](eclipse)
+- `Eclipse Memory Analyzer`           : For ヒープダンプ解析
 - `Everything Command-line Interface` : [Downloads](http://www.voidtools.com/downloads/)
 - `Everything Search Engine`          : [Everything Search Engine](http://www.voidtools.com/)
+- `ExcelSniper`
 - `GCViewer`                          : [Releases ・ chewiebug/GCViewer ・ GitHub](https://github.com/chewiebug/GCViewer/releases)
 - `GHC`                               : For Cabal
 - `Google Chrome`                     : Refs: [chrome](chrome)
