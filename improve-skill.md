@@ -61,6 +61,7 @@ Skill
     - [ ] [A Tour of Go](https://go-tour-jp.appspot.com/)
     - [ ] [はじめてのGo―シンプルな言語仕様，型システム，並行処理：特集｜gihyo.jp … 技術評論社](http://gihyo.jp/dev/feature/01/go_4beginners)
     - [ ] [みんなのGo言語[現場で使える実践テクニック] | 松木雅幸, mattn, 藤原俊一郎, 中島大一, 牧大輔, 鈴木健太 | 工学 | Kindleストア | Amazon](https://www.amazon.co.jp/dp/B01LMS7B1O/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+    - [ ] [ASCII.jp：Goならわかるシステムプログラミング](http://ascii.jp/elem/000/001/235/1235262/)
 - 実践
     - [ ] todo.txt-cli のgolang実装
     - [ ] remark.jsのホスティングサービス
