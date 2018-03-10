@@ -47,7 +47,6 @@ Categories: []
 - `Google Chrome`                     : Refs: [chrome](chrome)
 - `Java Decompiler (JD-GUI)`
 - `MSYS2`                             : <http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/>, <http://sourceforge.net/projects/msys2/files/Base/x86_64/>
-- `Microsoft Lync`
 - `Pandoc`                            : markdown - textile 変換 等。
 - `PlantUML`                          : TODO: 未確認 TODO: Graphvizもいりそう
 - `Rapid Environment Editor`          : editor for environment : [Rapid Environment Editor](http://www.rapidee.com/ja/about)
@@ -60,6 +59,7 @@ Categories: []
 - `WinMerge`                          : 基本vimdiff使うがexcelの差分とか見れたはず
 - `WinSCP`                            : Free SFTP, SCP and FTP client for Windows
 - `WinShot`
+- `Wireshark`
 - `XZ Utils`                          : For unarchive msys2 install file : <http://tukaani.org/xz/>
 - `astah\* community`
 - `ghq`                               : [GitHub - motemen/ghq: Remote repository management made easy](https://github.com/motemen/ghq)
@@ -67,7 +67,6 @@ Categories: []
 - `kSar`                              : [ksar : a sar grapher 日本語情報トップページ - OSDN](https://osdn.jp/projects/sfnet_ksar/)
 - `nkf`                               : 文字コード変換 : [nkf.exe nkf32.dll Windows用の詳細情報 : Vector ソフトを探す！](http://www.vector.co.jp/soft/win95/util/se295331.html)
 - `p`                                : pomodoro by bash. Refs: [GitHub - chrismdp/p: A simple yet powerful pomodoro tracker in pure Shell](https://github.com/chrismdp/p)
-- `peco`                              : [GitHub - peco/peco: Simplistic interactive filtering tool](https://github.com/peco/peco)
 - `侍`
 
 Caution:
@@ -210,25 +209,15 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
     Refs: [msys2での$HOMEとOpenSSHでのホームディレクトリの違い - Qiita](http://qiita.com/nana4gonta/items/622571c66bfe7f1c7150)
 
 - Workaround for Git
-    - http,httpsプロトコルの際のユーザID,パスワード省略
-
-            cat << EOS >> ~/.netrc 2>&1
-            machine {gitlab host name}
-            login {gitlab user id}
-            password {gitlab password}
-
-            machine github.com
-            login assout
-            password {github Personal access token}
-            EOS
-
-        - GitHubはログインパスワードでなく"Personal access token"じゃないとダメらしい
-          Refs: [\[Git\]\[GitHub\]GitHubにPushする際に認証失敗する DevAchieve](http://wada811.blogspot.com/2014/05/failed-to-push-to-github-over-https.html)
+    - GitHubはログインパスワードでなく"Personal access token"じゃないとダメらしい
+      Refs: [\[Git\]\[GitHub\]GitHubにPushする際に認証失敗する DevAchieve](http://wada811.blogspot.com/2014/05/failed-to-push-to-github-over-https.html)
 
     - /etc/gitconfigの設定
 
             # Eclipse(EGit)から参照できるように以下にsystemのgitconfigを作成。/etc/gitconfigが存在することが前提
-            ln -sf /etc /d/etc
+            ln -sf /etc /d/etc/
+            # Git fow Windowsのバージョンによっては↓をみるっぽい
+            ln -sf "/etc/gitconfig" "/c/Program Files/Git/mingw64/etc"
 
 - hostsをWindowsと共用する(二重管理が嫌なため。またsshが/etc/hostsのほう見ないっポイ)
 
@@ -292,7 +281,7 @@ Note:
 
 プロキシ設定
 
-/c/Users/.npmrcを作成 (${HOME}だとみてくれないっポイ)
+/c/Users/admin/.npmrcを作成 (${HOME}だとみてくれないっポイ)
 
     proxy={proxy url}
     registry=http://registry.npmjs.org/
@@ -351,6 +340,12 @@ TODO npmのバージョンを上げたいとき`npm i -g npm@latest-2`でglobal�
         ln -sf $(cygpath $(ghq root))/github.com/assout/todo.txt-note/note ~/.todo.actions.d/
         ln -sf $(cygpath $(ghq root))/github.com/assout/todo.txt-p/p ~/.todo.actions.d/
         ln -sf $(cygpath $(ghq root))/github.com/timpulver/todo.txt-graph/ ~/.todo.actions.d/graph
+
+##### Install with ghg
+
+ghgが使えない。エラーは出ないが、.ghg/bin内に入らない。
+
+    # ghg get mpppk/hlb
 
 ##### Install with go
 

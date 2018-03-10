@@ -10,66 +10,48 @@ Categories: []
 
 ### List
 
+- `Add to Wunderlist`
 - `AutoPagerize`
-- `Defenestrate`
+- `Clutter Free - Prevent duplicate tabs` : 重複タブを自動クローズ。ショートカットキーはすべて無効にする。
 - `Disable Extensions Temporarily`
-- `Fire Shot` : 1ページ内スクロールしてきゃぷれる。1回毎に保存先聞かれるけど他にいいのも無さそうなので。
+- `FireShot` : 1ページ内スクロールしてきゃぷれる。1回毎に保存先聞かれるけど他にいいのも無さそうなので。
 - `Github Toc`
 - `IE Tab` : 印刷プレビューを見るためにも使用
-- `Instant Translate`
 - `JSONView`
 - `LastPass`
 - `LivePage`
-- `Markdown Linker` : markdownでの[title]<url>形式を作成してくれる。`cmd+ctrl+c`でも行ける。
+- `Markdown Linker` : markdownでの[title]<url>形式を作成してくれる。`cmd(Windowsキー)+ctrl+c`でも行ける。
+- `Mate Translate`
 - `Moqups`
 - `Octotree`
 - `PlantUML Viewer`
 - `Postman`
 - `Save to Pocket`
-- `Scrum for Trello`
 - `Session Buddy`
-- `Sourcegraph for GitHub`
 - `Stylish`
-- `Web Cliper for Trello`
 - `Wiki Search for GitHub`
 - `ZenHub` : 試験運用中
 - `ato-ichinen`
 - `cVim(chromium-vim)`
-- `firenavi-addon`
-- `japanese-search`
-- `jsshell`
+- `japanese-search` : 自作。。なぜか審査通らず
 - `textlint`
 - `μBlock Origin`
 - `カラフル英語品詞分類`
 
 ### Unused
 
-- `Disconnect` : @office での基本認証ダイアログ問題対策。-> ソーシャルウィジェットが原因ぽかったので入れたら一切でなくなったので最高っぽい。
-    - TODO: 外しても出なくなったっぽい？
+- `Disconnect` : @office での基本認証ダイアログ問題対策。-> ソーシャルウィジェットが原因ぽかったので入れたら一切でなくなったので最高っぽい。TODO: 外しても出なくなったっぽい？
 - `Google Translate`
-    - 翻訳のポップアップ : すぐにポップアップを表示する。
-- `IE Tab Multi (Enhance)` : 最新のchromeでは使えないためIE Tabに以降
-- `Weblioポップアップ英和辞典` : Chromeのtask manager見ると常に通信が発生してそう。。。 : 重い
-    - ポップアップのON/OFF : Shift+Eで表示.
-- `Vichrome` : cVim に乗り換え
-    - General
-        - Disable auto focus when page is opend : checked
-        - Use Migemo Search : checked
-        - Wrap Scan : unchecked
-    - Appearance
-        - Use f-Mode Animation : unchecked
-    - Key Mapping
-        - setup from GitHub managed dotfiles.
-- `Shortcut Manager` : Vichrome でのマッピングキーを無効にするため(誤爆防止) : Vichrome 使わなくなったので不要
-    - Ctrl + F : 1ページ下へ
-    - Ctrl + H : 左のタブを選択する
-    - Ctrl + J : JavaScript:document.forms[0].submit()
-    - Ctrl + K : disable
-    - Ctrl + L : 右のタブを選択する
-    - Ctrl + Shit + H : 左のタブを閉じる
-    - Ctrl + Shit + L : 右のタブを閉じる
-    - Ctrl + Shit + O : 他のタブを閉じる
+- `IE Tab Multi (Enhance)` : 最新のchromeでは使えないためIE Tabに移行
 - `Screencastify` : 画面キャプチャ(一部無料) : gif化が有料っぽいので
+- `Scrum for Trello` : 一旦Trello使わないので
+- `Shortcut Manager` : Vichrome でのマッピングキーを無効にするため(誤爆防止) : Vichrome 使わなくなったので不要
+- `Sourcegraph for GitHub` : 特に理由はないけど使いこなせていないので使わない
+- `Vichrome` : cVim に乗り換え
+- `Web Cliper for Trello`
+- `Weblioポップアップ英和辞典` : Chromeのtask manager見ると常に通信が発生してそう。。。 : 重い
+- `firenavi-addon`
+- `jsshell` : https://chrome.google.com/webstore/detail/jsshell/kmgmkbicahmbceidoidjbkbpkfogaldh
 
 ### Details
 
@@ -113,12 +95,12 @@ Keys
 
         %y%m%d_%H%M%S_FireShot_%t
 
-#### Instant Translate
+#### Mate Translate
 
 - Settings
-    - `;`         : Automatic detection -> Japanese
-    - `Shift + ;` : Japanese -> English
+    - `Shift + a` : Automatic detection -> Japanese
 - Caution: TODO: chromeの認証ダイアログが閉じられちゃう？ @office
+- TODO: Shiftなしのキー割り当てにしたい
 
 #### Octotree
 

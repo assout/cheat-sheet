@@ -82,7 +82,7 @@ Examples
     - Display
         - Users display format : 山田 太郎
         - Use Gravatar user icons : Checked
-        - Default Gravatar image : Identicons
+        - Default Gravatar image : Monster ids
     - API
         - Enable REST web service: Checked
     - Projects
