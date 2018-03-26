@@ -16,6 +16,7 @@ Categories: []
 - Slack
 - Text 2 Mind Map
 - VISUALGO : Algorithm
+- [minmeeting - 10分で生産的なミーティングができる会議効率化ツール](https://minmeeting.jp/)
 - gitignore.io
 - moqups
 - ttygif
@@ -31,3 +32,4 @@ Categories: []
     - Jenkins : CI
 - Codecov   : Continuous code coverage
 - COVERALLS : Continuous code coverage
+

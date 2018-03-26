@@ -19,7 +19,7 @@ Categories: []
 - `IE Tab` : 印刷プレビューを見るためにも使用
 - `JSONView`
 - `LastPass`
-- `LivePage`
+- `LivePage` : インストールにログインが必要っぽい
 - `Markdown Linker` : markdownでの[title]<url>形式を作成してくれる。`cmd(Windowsキー)+ctrl+c`でも行ける。
 - `Mate Translate`
 - `Moqups`

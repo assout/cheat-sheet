@@ -162,6 +162,9 @@ TasksにPackage Explorerで選択した範囲のみ表示する
             - Automatically ignore derived resources by adding them to .gitignore : uncheck
     - Ignored Resources
         - Add Pattern... : target, Settings, .settings, .classpath, .project, *.swo, *.swp, tags, .tags
+    - SVN
+        - Performance
+            - Comute deep outgoing state ... : uncheck
 
 #### About Data Management
 

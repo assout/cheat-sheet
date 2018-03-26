@@ -57,8 +57,14 @@ Categories:[]
 
     - 標準出力とエラー出力両方をリダイレクト :
 
-            command >& /dev/null
+            command &> /dev/null # 推奨
+            command >& /dev/null # 非推奨
             command > /dev/null 2>&1 # legacy
+
+    - 標準出力とエラー出力両方を追加リダイレクト :
+
+            command &>> /dev/null # 推奨
+            command >> /dev/null 2>&1 # legacy
 
     - 標準出力とエラー出力両方を別コマンドに渡す :
 
@@ -279,6 +285,7 @@ Refs: [Can ${var} parameter expansion expressions be nested in bash? - Stack Ove
 
 - [コマンドラインプログラムにおける引数、オプションなどの標準仕様 プログラマーズ雑記帳](http://yohshiy.blog.fc2.com/blog-entry-260.html)
 - [コマンドラインツールを書くなら知っておきたい Bash の 予約済み Exit Code - Qiita](http://qiita.com/Linda_pp/items/1104d2d9a263b60e104b)
+- [GNU Coding Standards: Option Table](https://www.gnu.org/prep/standards/html_node/Option-Table.html#Option-Table)
 
 ## Regex - Regular Expression
 
@@ -582,7 +589,7 @@ Refs: [DigiLoog » Linuxの各圧縮コマンド実行速度と圧縮率を測�
 - スクリプトファイルの場所を取得する
         - 実行されたシェルの場所(sourceコマンドなどで呼ばれた場合、呼び元が取得される)
 
-                script_dir=$(cd "$(dirname "$0")" || exit 1; pwd)
+                here=$(cd "$(dirname "$0")" || exit 1; pwd)
 
         - 常に実行シェルの場所(sourceコマンドなどで呼ばれた場合、呼び先が取得される)
 

@@ -76,9 +76,10 @@ Caution:
 
 #### Installing
 
+- `MSYS2` : `D:`直下にインストール(それ以外だと何か問題があったはず)
+- `Microsoft .NET Framework 2.0 SDK 日本語版 (x64)` : https://www.microsoft.com/ja-jp/download/details.aspx?id=15354 : textlintインストール時に必要
 - `Tar for Windows` : `~/Tools`配下にインストール
 - `XZ Utils` : `~/Tools`配下にインストール
-- `MSYS2` : `D:`直下にインストール(それ以外だと何か問題があったはず)
 
 MSYS2インストール後に実行
 
@@ -232,14 +233,12 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
     ctags \
     diffutils \
     expect \
-    gcc \
     git \
     lftp \
     make \
     man-pages-posix \
     mingw-w64-x86_64-ansicon-git \
     mingw-w64-x86_64-connect \
-    mingw-w64-x86_64-gcc \
     mingw-w64-x86_64-go \
     mingw-w64-x86_64-libnotify \
     mingw-w64-x86_64-jq \
@@ -274,7 +273,6 @@ Note:
 
 - `xmllint`はデフォルトで入ってるっぽい
 - `procps`は`pgrep`, `pkill`, `ps`, `watch`コマンドなどが入ってる
-- `mingw-w64-x86_64-gcc`は`fzf`のために入れてる(結局`fzf`はうまく動いてないが)
 - `mingw-w64-x86_64-oniguruma`は`jq`のために入れてる
 
 ##### Install with npm
@@ -296,19 +294,36 @@ Note:
     js-yaml \
     markdown-html \
     markdown-to-slides \
+    markdown-to-slides-server \
     tldr \
 
-TODO npmのバージョンを上げたいとき`npm i -g npm@latest-2`でglobalに入れようとするとエラーになるので、globalにしなければ入れれそう
+- TODO npmのバージョンを上げたいとき`npm i -g npm@latest-2`でglobalに入れようとするとエラーになるので、globalにしなければ入れれそう
+- `markdown-to-slides-server`はインストール失敗する
+
+
+##### Install with npm for textlint
+
+    npm install -g windows-build-tools
+    npm config set msvs_version 2015
+    npm config set python "C:\Users\admin\.windows-build-tools\python27\python.exe"
+    npm install -g node-gyp
+    npm install -g utf-8-validate
+    npm install -g textlint
+
+Refs. [Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qiita](https://qiita.com/AkihiroTakamura/items/25ba516f8ec624e66ee7)
 
 ##### Install with gem
 
     gem install \
+    githelp \
     mdl \
     yaml-lint \
 
+※`githelp`は動かない
+
 ##### Install with ghq
 
-- ghqで取得
+- `ghq`で取得
 
         ghq get https://github.com/assout/dotfiles/
         ghq get https://github.com/assout/memolist.wiki/
@@ -346,6 +361,7 @@ TODO npmのバージョンを上げたいとき`npm i -g npm@latest-2`でglobal�
 ghgが使えない。エラーは出ないが、.ghg/bin内に入らない。
 
     # ghg get mpppk/hlb
+    # ghg get mattn/memo
 
 ##### Install with go
 
@@ -388,7 +404,7 @@ Refs: [mintty-color-schemes/base16-tomorrow.minttyrc at master ・ oumu/mintty-c
 
     - エクスプローラを開く
 
-            start .
+            start .[Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qiita](https://qiita.com/AkihiroTakamura/items/25ba516f8ec624e66ee7)
             explorer .
 
     - URLも開ける
