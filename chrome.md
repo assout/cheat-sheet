@@ -37,6 +37,7 @@ Categories: []
 - `textlint`
 - `μBlock Origin`
 - `カラフル英語品詞分類`
+- `ローカルファイルリンク有効化`
 
 ### Unused
 
