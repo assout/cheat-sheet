@@ -17,8 +17,6 @@ Categories: []
 
 - Tool bar - Next Annotation ▼ - Error以外 : unchecked.(エラーのみを修正していくことが多いので) : TODO: Error/Warningを両方区別して飛びたい
 - Perspective
-    - Outlineを右にする
-    - Progress, {Other}を中央下部にする
 
 #### Working sets
 
@@ -97,8 +95,6 @@ TasksにPackage Explorerで選択した範囲のみ表示する
     \* 設定ファイル(epf)はdotfiles管理するが視認性が悪いので↓もメンテすること。
 
 - General
-    - Appearance
-        - Colors and Font theme: Classsic Theme
     - Editors
         - AnyEdit Tools
             - Auto - Convert
@@ -121,6 +117,8 @@ TasksにPackage Explorerで選択した範囲のみ表示する
     - Keys
         - Scheme: `Vim's key bindings`(pluginインストール後じゃないとできない)
         - Command : Vrapper用のキーを無効(Refs: `.vrapperrc`)
+    - News
+        - Enable automatic news polling : disable
 - Java
     - Appearance
         - Members Sort Order
@@ -155,9 +153,6 @@ TasksにPackage Explorerで選択した範囲のみ表示する
         - Add... : add system jre(in jdk).
 - Team
     - Git
-        - 直下
-            - Cloning repositories
-                - Default repository folder: D:¥admin¥Development \* @office
         - Projects
             - Automatically ignore derived resources by adding them to .gitignore : uncheck
     - Ignored Resources
@@ -174,23 +169,19 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 ## Plug-ins
 
 - `AnyEdit tools plugin` : From Marketplace
-- `Codic Eclipse Plugin` : <http://kenji-namba.github.io/codic-eclipse-plugin/updates> <https://github.com/kenji-namba/codic-eclipse-plugin>
 - `DBViewer` : From Marketplace
-- `EasyShell` : From Marketplace
 - `EclEmma Java Code Coverage(jacoco)` : From Marketplace
 - `Eclipse Checkstyle Plug-in` : From Marketplace
 - `Eclipse Class Decompiler` : From Marketplace
 - `Eclipse Explorer for Java` : From Marketplace : `EasyShell`でもできるがキーストロークが長いので。 : TODO: 1回しか実行できない
 - `Eclipse Metrics Plugin(frank sauer)` : <http://metrics.sourceforge.net/update>
 - `FindBugs Eclipse Plugin` : From Marketplace
-- `HTML Editor (WTP) Mars` : From Marketplace
 - `JBoss Tools` : From Marketplace
     - `Contexts and Dependency Injection Tools`
     - `FreeMaker IDE`
     - `JBoss JAX-RS Tools`
     - `JBoss OpenShift Tools`
 - `Java Decompiler Eclipse Plug-in` : <http://jd.benow.ca/jd-eclipse/update> : required Microsoft Visual C++ 2008 SP1 Redistributable Package
-- `JUnitLoop`
 - `M2Eclipse(m2e)` : built-in
 - `Marketplace Client` : built-in
 - `Plant UML` : <http://plantuml.sourceforge.net/updatesitejuno/>
@@ -198,7 +189,6 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 - `Quick JUnit` : From Marketplace : デフォルトだとなぜかCtrl+0で全テスト実行されてしまう。再インストールすると直った。
 - `ShellEd` : <http://sourceforge.net/projects/shelled/files/shelled/update/>
 - `StepCounter` : <https://github.com/takezoe/stepcounter>
-- `TM Terminal` : From Marketplace
 - `UCDetector` : <http://ucdetector.sourceforge.net/update>
 - `Vrapper` : <http://vrapper.sourceforge.net/update-site/stable> : MarketplaceにもあるがpluginをどうせURLから入れる。unstableのほうが機能豊富
 - `eclipse-pmd` : From Marketplace TODO 不要？
@@ -206,12 +196,17 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 
 ### Useless
 
+- `Codic Eclipse Plugin` : <http://kenji-namba.github.io/codic-eclipse-plugin/updates> <https://github.com/kenji-namba/codic-eclipse-plugin>。あんま使わない。
+- `EasyShell` : From Marketplace。あんま使わない。
 - `Eclipse Color Theme`  : いらない
 - `Eclipse Postfix Code Completion Plugin` : <https://raw.githubusercontent.com/trylimits/Eclipse-Postfix-Code-Completion/master/org.eclipse.jdt.postfixcompletion.updateSite/target/site/> : 結局使わない
 - `File Bookmark Plugin` : <http://sourceforge.jp/projects/filebookmark/> : Eclipse Luna だと使えないっぽい。。
+- `HTML Editor (WTP) Mars` : From Marketplace
+- `JUnitLoop` : あんま使わない。
 - `Lombok` : 不要にライブラリ使わない
 - `SimplePropertyEditor` : 軽いらしいがフォントが見づらい。`Ctrl + /`でのコメントアウトトグルが効かない。
 - `Subversive`           : Subversionもう使わない。
+- `TM Terminal` : From Marketplace。あんま使わない。
 - `m2e-subversive`       : Subversionもう使わない。: Check out as Maven Project が出るようになる: File - import - Maven - Check out Maven Projects from SCM - m2e Marketplace - m2e-subversive
 
 ### CheckStyle
@@ -273,6 +268,7 @@ Plug-ins
 - Split Editor Plugin
 - Surround.vim
 - argtextobj.vim        : 引数を対象とするtextobj.     : {motion}(i|a)a
+- cycle.vim
 - methodtextobj.vim     : methodを対象とするtextobj.   : {motion}(i|a)f
 - textobj-line.vim      : 引数を対象とするtextobj.     : {motion}(i|a)l
 - vim-indent-object.vim : 同一インデントを対象とする？ : {motion}(i|a)i?

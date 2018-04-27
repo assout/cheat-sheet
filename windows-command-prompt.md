@@ -240,6 +240,7 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
     mingw-w64-x86_64-ansicon-git \
     mingw-w64-x86_64-connect \
     mingw-w64-x86_64-go \
+    mingw-w64-x86_64-imagemagick \
     mingw-w64-x86_64-libnotify \
     mingw-w64-x86_64-jq \
     mingw-w64-x86_64-make \
@@ -268,6 +269,9 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
     wget \
     winpty \
     zip \
+
+    # for sshd
+    pacman -S openssh cygrunsrv mingw-w64-x86_64-editrights
 
 Note:
 
@@ -370,8 +374,9 @@ ghgが使えない。エラーは出ないが、.ghg/bin内に入らない。
 
 ##### Install with pip
 
-    pip install github-backup
     pip install cheat
+    pip install github-backup
+    pip install ranger # 上手くいかないのでマニュアルインストール
     ghq get chrisallenlane/cheat # for completion
 
 ##### Install from source
@@ -380,6 +385,12 @@ ghgが使えない。エラーは出ないが、.ghg/bin内に入らない。
     // msys2_shell.cmd で起動
     make
     make install
+
+##### Setup sshd
+
+- [Setting up SSHd · msys2/msys2 Wiki · GitHub](https://github.com/msys2/msys2/wiki/Setting-up-SSHd)
+- [https://gist.githubusercontent.com/samhocevar/00eec26d9e9988d080ac/raw/3dfeffef2bec8134d38cad8ff92f931b228ee7ba/gistfile1.sh](https://gist.githubusercontent.com/samhocevar/00eec26d9e9988d080ac/raw/3dfeffef2bec8134d38cad8ff92f931b228ee7ba/gistfile1.sh)
+- [Re: sshd: lastlog_filetype: Couldn't stat /var/log/lastlog: No such file or directory.](https://lists.debian.org/debian-user/2009/04/msg01923.html)
 
 ##### Options...
 
@@ -541,6 +552,10 @@ ShellCheckをインストール
         Path=%JAVA_HOME%\bin;C:\Users\admin\AppData\Roaming\cabal\bin;D:\msys64\usr\bin
         http_proxy={http_proxy}
         _JAVA_OPTIONS=-Dfile.encoding=UTF-8
+
+### Registry
+
+dotfilesから実行
 
 ## Directory hierarchy (office)
 

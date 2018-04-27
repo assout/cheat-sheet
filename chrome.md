@@ -29,6 +29,7 @@ Categories: []
 - `Save to Pocket`
 - `Session Buddy`
 - `Stylish`
+- `Text Blaze`
 - `Wiki Search for GitHub`
 - `ZenHub` : 試験運用中
 - `ato-ichinen`
@@ -99,7 +100,7 @@ Keys
 #### Mate Translate
 
 - Settings
-    - `Shift + a` : Automatic detection -> Japanese
+    - `Shift + z` : Automatic detection -> Japanese
 - Caution: TODO: chromeの認証ダイアログが閉じられちゃう？ @office
 - TODO: Shiftなしのキー割り当てにしたい
 

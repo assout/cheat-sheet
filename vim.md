@@ -432,7 +432,7 @@ Refs:
 
 ## Others - その他
 
-- Windowsの右クリックメニューに"Edit with GVim", "Read with GVim"を追加 :
+- Windowsの右クリックメニューに"Edit in GVim", "Read in GVim"を追加 :
 
         [HKEY_CLASSES_ROOT] - [*] - [shell]
 

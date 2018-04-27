@@ -73,6 +73,15 @@ Categories: []
 
     Refs: [gitの歴史に残っているユーザー名やメールアドレスを書き換える deadwood](http://www.d-wood.com/blog/2013/10/22_4900.html)
 
+- 範囲を指定してfilter-branchする
+
+        git branch temp
+        git filter-branch --env-filter 'export GIT_AUTHOR_DATE="Thu Apr 20 09:00:00 2018 +0900"; export GIT_COMMITTER_DATE="Thu Apr 20 09:00:00 2018 +0900"' refa..temp
+        git rebase temp
+        git branch --delete temp
+
+    Refs. [git - Running filter-branch over a range of commits - Stack Overflow](https://stackoverflow.com/questions/15250070/running-filter-branch-over-a-range-of-commits/15256575#15256575)
+
 - Forkしたリポジトリを本家リポジトリに追従、追跡する
     - 追従するFork元を追加
 
