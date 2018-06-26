@@ -12,7 +12,7 @@ Categories: []
 
 - `Add to Wunderlist`
 - `AutoPagerize`
-- `Clutter Free - Prevent duplicate tabs` : 重複タブを自動クローズ。ショートカットキーはすべて無効にする。
+- `Defenestrate` : 重複タブ自動クローズ
 - `Disable Extensions Temporarily`
 - `FireShot` : 1ページ内スクロールしてきゃぷれる。1回毎に保存先聞かれるけど他にいいのも無さそうなので。
 - `Github Toc`
@@ -28,6 +28,7 @@ Categories: []
 - `Postman`
 - `Save to Pocket`
 - `Session Buddy`
+- `Shortkeys`
 - `Stylish`
 - `Text Blaze`
 - `Wiki Search for GitHub`
@@ -122,12 +123,20 @@ Keys
 
 Caution: 外に出したくないファイルはローカルにサーバ立てること!
 
+#### Shortkeys
+
+Edit shortcuts
+
+- ctrl+h: Do nothing
+    - Activation Settings - Active while in form fields: check
+
 ## Apps
 
 ### List
 
 - Postman
 - Simple Docker UI
+- Timer
 
 ## Configuration
 

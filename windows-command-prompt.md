@@ -13,14 +13,11 @@ Categories: []
 ## Settings
 
 - コントロールパネル
-    - システム
-        - システムの詳細設定
-            - 詳細設定
-                - パフォーマンス : 設定
-                    - 以下以外を未選択にする(一度"パフォーマンスを優先する"を選ぶと楽)
-                        - ウィンドウとボタンに視覚スタイルを使用する
-                        - スクリーン フォントの縁を滑らかにする
-                        - ドラッグ中にウィンドウの内容を表示する
+    - システム- システムの詳細設定- 詳細設定- パフォーマンス : 設定
+        - 以下以外を未選択にする(一度"パフォーマンスを優先する"を選ぶと楽)
+            - ウィンドウとボタンに視覚スタイルを使用する
+            - スクリーン フォントの縁を滑らかにする
+            - ドラッグ中にウィンドウの内容を表示する
     - 個人設定
         - デスクトップの背景
             - 単色 - 最上行の右から3列目の青系
@@ -32,54 +29,56 @@ Categories: []
 
 ### List
 
-- `ANSIFilter`                        : [Downloads](http://www.andre-simon.de/zip/download.php)
-- `AutoHotKey`                        : msys2でのvim ime offに使用 : [AutoHotkey Downloads](https://autohotkey.com/download/)
-- `C/Migemo for Windows`              : For vim-migemo : [C/Migemo KaoriYa](http://www.kaoriya.net/software/cmigemo/)
-- `Cabal`                             : For ShellCheck
-- `Ctrl2cap`                          : キーボード配置変更(Caps LockをCtrlにする) : [Ctrl2cap](https://technet.microsoft.com/ja-jp/sysinternals/bb897578.aspx)
-- `Eclipse`                           : Refs: [eclipse](eclipse)
-- `Eclipse Memory Analyzer`           : For ヒープダンプ解析
-- `Everything Command-line Interface` : [Downloads](http://www.voidtools.com/downloads/)
-- `Everything Search Engine`          : [Everything Search Engine](http://www.voidtools.com/)
+- `7-Zip`
+- `ANSIFilter`:                        [Downloads](http://www.andre-simon.de/zip/download.php)
+- `AutoHotKey`:                        msys2でのvim ime offに使用 : [AutoHotkey Downloads](https://autohotkey.com/download/)
+- `C/Migemo for Windows`:              For vim-migemo : [C/Migemo KaoriYa](http://www.kaoriya.net/software/cmigemo/)
+- `Ctrl2cap`:                          キーボード配置変更(Caps LockをCtrlにする) : [Ctrl2cap](https://technet.microsoft.com/ja-jp/sysinternals/bb897578.aspx)
+- `DBeaver`
+- `Eclipse Memory Analyzer`:           For ヒープダンプ解析
+- `Eclipse`:                           Refs: [eclipse](eclipse)
+- `Everything Command-line Interface`: [Downloads](http://www.voidtools.com/downloads/)
+- `Everything Search Engine`:          [Everything Search Engine](http://www.voidtools.com/)
 - `ExcelSniper`
-- `GCViewer`                          : [Releases ・ chewiebug/GCViewer ・ GitHub](https://github.com/chewiebug/GCViewer/releases)
-- `GHC`                               : For Cabal
-- `Google Chrome`                     : Refs: [chrome](chrome)
+- `GCViewer`:                          [Releases ・ chewiebug/GCViewer ・ GitHub](https://github.com/chewiebug/GCViewer/releases)
+- `GetWindowText`:                     [Software for professionals and beginners](http://www.softwareok.com/)
+- `Google Chrome`:                     Refs: [chrome](chrome)
+- `Inkscape` : [Draw Freely | Inkscape](https://inkscape.org/ja/)
 - `Java Decompiler (JD-GUI)`
-- `MSYS2`                             : <http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/>, <http://sourceforge.net/projects/msys2/files/Base/x86_64/>
-- `Pandoc`                            : markdown - textile 変換 等。
-- `PlantUML`                          : TODO: 未確認 TODO: Graphvizもいりそう
-- `Rapid Environment Editor`          : editor for environment : [Rapid Environment Editor](http://www.rapidee.com/ja/about)
-- `Remote Mouse`                      : For home.
-- `ScreenToGif`                       : [ScreenToGif - Home](https://screentogif.codeplex.com/)
+- `MSYS2`:                             <http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/>, <http://sourceforge.net/projects/msys2/files/Base/x86_64/>
+- `Pandoc`:                            markdown - textile 変換 等。
+- `PlantUML`:                          TODO: 未確認 TODO: Graphvizもいりそう
+- `PlantUML Server`:  [plantuml/plantuml-server: PlantUML Online Server](https://github.com/plantuml/plantuml-server)
+- `Rapid Environment Editor`:          editor for environment : [Rapid Environment Editor](http://www.rapidee.com/ja/about)
+- `Remote Mouse`:                      For home.
+- `ScreenToGif`:                       [ScreenToGif - Home](https://screentogif.codeplex.com/)
 - `ShellCheck`
-- `TODO.TXT Command Line Interface`   : [GitHub - ginatrapani/todo.txt-cli: A simple and extensible shell script for managing your todo.txt file.](https://github.com/ginatrapani/todo.txt-cli)
-- `Tar for Windows`                   : For unarchive msys2 install file : <http://gnuwin32.sourceforge.net/packages/gtar.htm>
-- `Vim(kaoriya)`                      : Refs: [vim](vim) : [Vim ; KaoriYa](http://www.kaoriya.net/software/vim/)
-- `WinMerge`                          : 基本vimdiff使うがexcelの差分とか見れたはず
-- `WinSCP`                            : Free SFTP, SCP and FTP client for Windows
+- `TODO.TXT Command Line Interface`:   [GitHub - ginatrapani/todo.txt-cli: A simple and extensible shell script for managing your todo.txt file.](https://github.com/ginatrapani/todo.txt-cli)
+- `Translate Shell`:                   [Translate Shell](https://www.soimort.org/translate-shell/)
+- `Vim(kaoriya)`:                      Refs: [vim](vim) : [Vim ; KaoriYa](http://www.kaoriya.net/software/vim/)
+- `WinMerge`:                          基本vimdiff使うがexcelの差分とか見れたはず
+- `WinSCP`:                            Free SFTP, SCP and FTP client for Windows
 - `WinShot`
 - `Wireshark`
-- `XZ Utils`                          : For unarchive msys2 install file : <http://tukaani.org/xz/>
 - `astah\* community`
-- `ghq`                               : [GitHub - motemen/ghq: Remote repository management made easy](https://github.com/motemen/ghq)
-- `hub`                               : [GitHub - github/hub: hub helps you win at git.](https://github.com/github/hub)
-- `kSar`                              : [ksar : a sar grapher 日本語情報トップページ - OSDN](https://osdn.jp/projects/sfnet_ksar/)
-- `nkf`                               : 文字コード変換 : [nkf.exe nkf32.dll Windows用の詳細情報 : Vector ソフトを探す！](http://www.vector.co.jp/soft/win95/util/se295331.html)
-- `p`                                : pomodoro by bash. Refs: [GitHub - chrismdp/p: A simple yet powerful pomodoro tracker in pure Shell](https://github.com/chrismdp/p)
+- `ghg`:                               [Songmu/ghg: Get the executable from github releases easily](https://github.com/Songmu/ghg)
+- `ghq`:                               [GitHub - motemen/ghq: Remote repository management made easy](https://github.com/motemen/ghq)
+- `hub`:                               [GitHub - github/hub: hub helps you win at git.](https://github.com/github/hub)
+- `imageClipPaste` : [Imageclippaste by mizutuu](http://mizutuu.github.io/imageClipPaste/)
+- `kSar`:                              [ksar : a sar grapher 日本語情報トップページ - OSDN](https://osdn.jp/projects/sfnet_ksar/)
+- `nkf`:                               文字コード変換 : [nkf.exe nkf32.dll Windows用の詳細情報 : Vector ソフトを探す！](http://www.vector.co.jp/soft/win95/util/se295331.html)
+- `p`:                                 pomodoro by bash. Refs: [GitHub - chrismdp/p: A simple yet powerful pomodoro tracker in pure Shell](https://github.com/chrismdp/p)
 - `侍`
 
-Caution:
+Note:
 
 - Excelアドインは Refs: [microsoft-excel](microsoft-excel)
 - MSYS2内で利用するものは Refs: [#MSYS2](#user-content-msys2)
 
 #### Installing
 
-- `MSYS2` : `D:`直下にインストール(それ以外だと何か問題があったはず)
+- `MSYS2` : `D:`直下にインストール(それ以外だと何か問題があったはず)。tar.xzの展開は7-Zipが利用できる。
 - `Microsoft .NET Framework 2.0 SDK 日本語版 (x64)` : https://www.microsoft.com/ja-jp/download/details.aspx?id=15354 : textlintインストール時に必要
-- `Tar for Windows` : `~/Tools`配下にインストール
-- `XZ Utils` : `~/Tools`配下にインストール
 
 MSYS2インストール後に実行
 
@@ -176,36 +175,48 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
 
 #### MSYS2
 
+##### Install
+
+Refs. [MSYS2 installation · msys2/msys2 Wiki](https://github.com/msys2/msys2/wiki/MSYS2-installation)
+
+```
+pacman -Syuu
+pacman -S --noconfirm vim # 後でいろいろ入れるがまずこれだけ
+```
+
 ##### Initial Settings
 
-- Task Bar - 作業フォルダ - `D:\admin`
-    - Property - 互換性 - 特権レベル: 管理者としてこのプログラムを実行する (シンボリックリンクを張るために必要)
+- Task Bar - プロパティ
+    - ショートカット
+        - 作業フォルダ - `D:\admin`
+        - 詳細設定 - 管理者として実行 (これを指定しないとCHERE_INVOKING=1が効かないようで起動時に/になってしまう)
+    - 互換性 - 特権レベル: 管理者としてこのプログラムを実行する (シンボリックリンクを張るために必要)
 
-- Edit ini
+- Edit mingw64.ini
 
-        vim ming64.ini
+        # Windowsネイティブのシンボリックリンクが作成される． 管理者権限でシェルを実行していない場合エラーとなる
         MSYS=winsymlinks:nativestrict
         CHERE_INVOKING=1
+        # Windows側の環境変数(%PATH%)を継承する（$PATHの末尾に追加される）
         MSYS2_PATH_TYPE=inherit
 
-        vim /etc/pacman.conf
+- Edit /etc/pacman.conf
+
         # 32bit用のリポジトリは無効にする
         # [mingw32]
         # Include = /etc/pacman.d/mirrorlist.mingw32
 
-- Edit fstab (パーミッションのため)
+- Edit /etc/fstab (パーミッションのため)
 
-        vim /etc/fstab
         noacl -> acl
 
     - Refs: [MSYS2と格闘 (2) - できないことはやりたくない](http://yaritakuni.hatenablog.com/entry/2014/12/09/202743)
-    - Caution: ただ全ファイルがデフォルト777になってしまうっぽく出来ればやりたくない
     - ファイルのx権限がない状態だと`start`が実行できないため、`noacl`に戻している。いったん今は実害無し。
         - -> 結局ダメだった。模索中。
 
 - Workaround for openssh
 
-        mkdir /home && ln -sf ~/ /home/admin
+        ln -sf ~/ /home/admin
 
     Refs: [msys2での$HOMEとOpenSSHでのホームディレクトリの違い - Qiita](http://qiita.com/nana4gonta/items/622571c66bfe7f1c7150)
 
@@ -216,24 +227,22 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
     - /etc/gitconfigの設定
 
             # Eclipse(EGit)から参照できるように以下にsystemのgitconfigを作成。/etc/gitconfigが存在することが前提
-            ln -sf /etc /d/etc/
-            # Git fow Windowsのバージョンによっては↓をみるっぽい
-            ln -sf "/etc/gitconfig" "/c/Program Files/Git/mingw64/etc"
+            ln -snf /etc /d/etc/
 
 - hostsをWindowsと共用する(二重管理が嫌なため。またsshが/etc/hostsのほう見ないっポイ)
 
-        ln -s /c/Windows/System32/drivers/etc/hosts /etc/hosts
+        ln -sb /c/Windows/System32/drivers/etc/hosts /etc/hosts
 
 ##### Install with pacman
 
-    pacman -Syu
-
-    pacman -S \
+    pacman -S --noconfirm \
     bc \
     ctags \
     diffutils \
     expect \
+    fzy \
     git \
+    git-flow \
     lftp \
     make \
     man-pages-posix \
@@ -241,12 +250,15 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
     mingw-w64-x86_64-connect \
     mingw-w64-x86_64-go \
     mingw-w64-x86_64-imagemagick \
-    mingw-w64-x86_64-libnotify \
     mingw-w64-x86_64-jq \
+    mingw-w64-x86_64-libnotify \
     mingw-w64-x86_64-make \
     mingw-w64-x86_64-nodejs \
     mingw-w64-x86_64-oniguruma \
+    mingw-w64-x86_64-postgresql \
     mingw-w64-x86_64-python2-pip \
+    mingw-w64-x86_64-python3-ipython \
+    mingw-w64-x86_64-python3-pandas \
     mingw-w64-x86_64-python3-pip \
     mingw-w64-x86_64-ruby \
     patch \
@@ -264,7 +276,7 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
     tmux \
     tree \
     ttyrec \
-    unzip
+    unzip \
     vim \
     wget \
     winpty \
@@ -281,29 +293,27 @@ Note:
 
 ##### Install with npm
 
-プロキシ設定
-
-/c/Users/admin/.npmrcを作成 (${HOME}だとみてくれないっポイ)
-
-    proxy={proxy url}
-    registry=http://registry.npmjs.org/
-
 インストール
 
-    npm install -g \
-    dockerfile_lint \
-    eslint \
-    eslint-config-google \
-    jsonlint \
-    js-yaml \
-    markdown-html \
-    markdown-to-slides \
-    markdown-to-slides-server \
-    tldr \
+```
+npm install -g \
+eslint \
+eslint-config-google \
+jsonlint \
+js-yaml \
+markdown-html \
+markdown-to-slides \
+remark-cli \
+remark-lint \
+remark-preset-lint-markdown-style-guide \
+tldr \
+```
+
+- 以下はインストール失敗する
+    - `markdown-to-slides-server`
+    - `dockerfile_lint`
 
 - TODO npmのバージョンを上げたいとき`npm i -g npm@latest-2`でglobalに入れようとするとエラーになるので、globalにしなければ入れれそう
-- `markdown-to-slides-server`はインストール失敗する
-
 
 ##### Install with npm for textlint
 
@@ -340,12 +350,6 @@ Refs. [Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qi
         ghq get https://github.com/github/hub
         ghq get https://github.com/timpulver/todo.txt-graph
 
-- Git hook用設定
-    - コミット禁止文字列ファイルの作成
-
-            touch ~/.git_prohibited_words
-            vi ~/.git_prohibited_words
-
 - install dict
 
         mkdir -p /usr/share/dict/
@@ -370,21 +374,23 @@ ghgが使えない。エラーは出ないが、.ghg/bin内に入らない。
 ##### Install with go
 
     go get github.com/42wim/matterstuff/mattertee
+    go get github.com/dufferzafar/cheat
+    go get github.com/gohugoio/hugo
     go get github.com/yuroyoro/gommit-m
 
 ##### Install with pip
 
-    pip install cheat
-    pip install github-backup
-    pip install ranger # 上手くいかないのでマニュアルインストール
-    ghq get chrisallenlane/cheat # for completion
-
-##### Install from source
-
-    ghq get https://github.com/jhawthorn/fzy.git
-    // msys2_shell.cmd で起動
-    make
-    make install
+```bash
+export PYTHONIOENCODING=utf-8
+pip3 install autopep8
+pip3 install backcall
+pip3 install colorama
+pip3 install flake8
+pip3 install github-backup
+pip3 install jira
+pip3 install pyformat
+pip3 install ranger # 上手くいかないのでマニュアルインストール
+```
 
 ##### Setup sshd
 
@@ -415,7 +421,8 @@ Refs: [mintty-color-schemes/base16-tomorrow.minttyrc at master ・ oumu/mintty-c
 
     - エクスプローラを開く
 
-            start .[Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qiita](https://qiita.com/AkihiroTakamura/items/25ba516f8ec624e66ee7)
+            # Refs. [Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qiita](https://qiita.com/AkihiroTakamura/items/25ba516f8ec624e66ee7)
+            start .
             explorer .
 
     - URLも開ける
@@ -427,7 +434,6 @@ Refs: [mintty-color-schemes/base16-tomorrow.minttyrc at master ・ oumu/mintty-c
         cygpath $(pwd)
 
 - SJISのファイルをgrepしたい場合、一時的に Options - Text - Character setをSJISに変更する
-- Maven 3.3.3では$HOME/.m2でなく$USERPROFILE/.m2を見るみたいなので、settings.xmlはC:\Users\admin\.m2に配置する
 
 ###### 文字化け関連
 
@@ -538,7 +544,7 @@ ShellCheckをインストール
 
 ### Keys
 
-- Caps Lock -> Ctrl (use [Change Key] tool)
+- Caps Lock -> Ctrl (use [ctrl2cap] tool)
 
 ### PATH
 

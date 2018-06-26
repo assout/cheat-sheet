@@ -164,6 +164,8 @@ Refs: [javac - Java プログラミング言語コンパイラ](http://docs.orac
 ## JUnit
 
 - Classクラスを比較(意外とめんどい)
+    - org.hamcrest.CoreMatchers.theInstance(T) を使う
+        - 一番よいかも
     - assertEqualsを使う(簡単だが非推奨)
             assertEquals(factory.getMessageType(), Integer.class); // TODO: wrapper classでよいか
     - assertThatを使う

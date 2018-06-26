@@ -8,8 +8,10 @@ Categories: []
 
 ## Prelude
 
-- Version: Eclipse Mars
-    - office: `eclipse-java-mars-2-win32-x86_64.zip`
+- Version:
+    - ~~Eclipse Mars~~
+    - ~~Eclipse Oxygen~~
+    - Eclipse Photon
 
 ## Settings
 
@@ -26,22 +28,6 @@ Categories: []
     - Third           : 3rd party用
     - Old             : 基本見ない古いやつ.
     - Other Projects  : デフォルトである、それ以外.
-
-### INI files (eclipse.ini)
-
-- メモリ割当て
-
-        -Xms1g
-        -Xmx2g
-
-- コンソールの文字化け対応のためUTF-8にする
-
-        -Dfile.encoding=utf-8
-
-- プラグインの英語化(特にFindBugs)
-
-        -Duser.language=en
-        -Duser.country=US
 
 ### Tool Bar
 
@@ -95,38 +81,30 @@ TasksにPackage Explorerで選択した範囲のみ表示する
     \* 設定ファイル(epf)はdotfiles管理するが視認性が悪いので↓もメンテすること。
 
 - General
+    - General
+        - Show heap status: check
     - Editors
-        - AnyEdit Tools
-            - Auto - Convert
-                - Remove trailing whitespace: off
-            - Convert...
-                - Save modified editor buffer before executing actions: off
         - File Associations
             - ftl TODO: ?
         - Structured Text Editors
             - Task Tags
                 - Enable searching for Task Tags : checked
         - Text Editors
-            - Displayed tab width: 2
-            - Show print margin - print margin column: specify same with Java Maximum line width value(e.g. 100).
             - Show whitespace characters : checked
             - Spelling
                 - Enable spell checking : check
-                - User defined dictionary : specify(hoge.add)
+                - User defined dictionary : specify(~/.vim/spell/en.utf-8.add)
                 - Encoding : UTF-8
     - Keys
         - Scheme: `Vim's key bindings`(pluginインストール後じゃないとできない)
         - Command : Vrapper用のキーを無効(Refs: `.vrapperrc`)
     - News
         - Enable automatic news polling : disable
+    - Workspace
+        - Build automatically : unchecked(プロジェクトが多く重い場合)
+        - Text file encoding : UTF-8
 - Java
     - Appearance
-        - Members Sort Order
-            - case 1 - staticか否かが設計で頻繁に変わる場合 : Types -> Static Fields -> Fields -> Static Initializers -> Initializers -> Constructors -> Static Methods -> Methods
-            - case 2 - keep default                         : Types -> Static Fields -> Static Initializers -> Static Methods -> Fields -> Initializers -> Constructors -> Methods
-            \* ただしTypesは場合によって最下部がよさそう
-            - Sort members in same category by visibility : checked
-                - Public -> Protected -> Default -> Private
         - Type Filters : add [java.awt.List]
     - Code Style
         - Formatter
@@ -134,32 +112,27 @@ TasksにPackage Explorerで選択した範囲のみ表示する
                 - Profile name: Eclipse [custom]
                 - Initialize settings with the following profile: Eclipse [built-in]
             - Edit...
-                - Indentation
-                    - General settings
-                        - Tab size: 2
-                - Comments
-                    - Enable line comment formatting : uncheck
+                - no customize.
     - Editor
-        - Content Assist
-            - Auto Activation - Auto activation delay (ms): 80
-            - Advanced
-                - Default Proposal Kinds
-                    - Java Non-Type Proposals : checked!(候補が重複して表示されるように見えるので、代わりに Intelligent Java Proposals をunchecked! - > 今度はほしい時にだめになった..
         - Templates
             - testc  : Setup,Exercise,Verifyコメントを入れる
             - log    : logger定義
             - lstack : log stacktrace
     - Installed JREs
-        - Add... : add system jre(in jdk).
+        - Installed JREs
+            - Add... : add system jre(in jdk).
+        - Execution Environments
+            - JavaSE-1.7, JavaSE-1.8 : checked.
+- Maven
+    - Annotation Processing
+        - Automatically configure JDT APT # generate-sourcesがビルドパスから外れてしまわないようにするため
+- Run/Debug
+    - Console
+        - Limit console output : check
 - Team
     - Git
         - Projects
             - Automatically ignore derived resources by adding them to .gitignore : uncheck
-    - Ignored Resources
-        - Add Pattern... : target, Settings, .settings, .classpath, .project, *.swo, *.swp, tags, .tags
-    - SVN
-        - Performance
-            - Comute deep outgoing state ... : uncheck
 
 #### About Data Management
 
@@ -168,46 +141,48 @@ TasksにPackage Explorerで選択した範囲のみ表示する
 
 ## Plug-ins
 
-- `AnyEdit tools plugin` : From Marketplace
-- `DBViewer` : From Marketplace
+- `DBeaver`
 - `EclEmma Java Code Coverage(jacoco)` : From Marketplace
 - `Eclipse Checkstyle Plug-in` : From Marketplace
-- `Eclipse Class Decompiler` : From Marketplace
-- `Eclipse Explorer for Java` : From Marketplace : `EasyShell`でもできるがキーストロークが長いので。 : TODO: 1回しか実行できない
-- `Eclipse Metrics Plugin(frank sauer)` : <http://metrics.sourceforge.net/update>
+- `Eclipse Explorer` : From Marketplace : `EasyShell`でもできるがキーストロークが長いので。
+- `Eclipse Metrics Plugin(metrics2)` : <http://metrics2.sourceforge.net/update>
+- `Enhanced Class Decompiler` : From Marketplace
 - `FindBugs Eclipse Plugin` : From Marketplace
 - `JBoss Tools` : From Marketplace
     - `Contexts and Dependency Injection Tools`
-    - `FreeMaker IDE`
     - `JBoss JAX-RS Tools`
-    - `JBoss OpenShift Tools`
-- `Java Decompiler Eclipse Plug-in` : <http://jd.benow.ca/jd-eclipse/update> : required Microsoft Visual C++ 2008 SP1 Redistributable Package
+    - `JMX Console`
+- `JDepend4Eclipse`
 - `M2Eclipse(m2e)` : built-in
 - `Marketplace Client` : built-in
-- `Plant UML` : <http://plantuml.sourceforge.net/updatesitejuno/>
+- `Plant UML` : <http://files.idi.ntnu.no/publish/plantuml/repository/>
 - `Properties Editor` : From Marketplace
 - `Quick JUnit` : From Marketplace : デフォルトだとなぜかCtrl+0で全テスト実行されてしまう。再インストールすると直った。
-- `ShellEd` : <http://sourceforge.net/projects/shelled/files/shelled/update/>
-- `StepCounter` : <https://github.com/takezoe/stepcounter>
+- `StepCounter` : <https://github.com/takezoe/stepcounter> : not update site.
 - `UCDetector` : <http://ucdetector.sourceforge.net/update>
 - `Vrapper` : <http://vrapper.sourceforge.net/update-site/stable> : MarketplaceにもあるがpluginをどうせURLから入れる。unstableのほうが機能豊富
-- `eclipse-pmd` : From Marketplace TODO 不要？
-- `pmd-eclipse-plugin` : From Marketplace
 
 ### Useless
 
+- `AnyEdit tools plugin` : From Marketplace
 - `Codic Eclipse Plugin` : <http://kenji-namba.github.io/codic-eclipse-plugin/updates> <https://github.com/kenji-namba/codic-eclipse-plugin>。あんま使わない。
+- `DBViewer` : From Marketplace。DBeaverのほうがモダンっぽい
 - `EasyShell` : From Marketplace。あんま使わない。
 - `Eclipse Color Theme`  : いらない
+- `Eclipse Metrics Plugin(frank sauer)` : <http://metrics.sourceforge.net/update>
 - `Eclipse Postfix Code Completion Plugin` : <https://raw.githubusercontent.com/trylimits/Eclipse-Postfix-Code-Completion/master/org.eclipse.jdt.postfixcompletion.updateSite/target/site/> : 結局使わない
 - `File Bookmark Plugin` : <http://sourceforge.jp/projects/filebookmark/> : Eclipse Luna だと使えないっぽい。。
+- `FreeMaker IDE from JBoss Tools`
 - `HTML Editor (WTP) Mars` : From Marketplace
 - `JUnitLoop` : あんま使わない。
 - `Lombok` : 不要にライブラリ使わない
-- `SimplePropertyEditor` : 軽いらしいがフォントが見づらい。`Ctrl + /`でのコメントアウトトグルが効かない。
+- `ShellEd` : <http://sourceforge.net/projects/shelled/files/shelled/update/> : あんま使わない
+- `Simple Properties Editor` : 軽いらしいがフォントが見づらい。`Ctrl + /`でのコメントアウトトグルが効かない。
 - `Subversive`           : Subversionもう使わない。
 - `TM Terminal` : From Marketplace。あんま使わない。
+- `eclipse-pmd` : From Marketplace TODO 不要？
 - `m2e-subversive`       : Subversionもう使わない。: Check out as Maven Project が出るようになる: File - import - Maven - Check out Maven Projects from SCM - m2e Marketplace - m2e-subversive
+- `pmd-eclipse-plugin` : From Marketplace
 
 ### CheckStyle
 
