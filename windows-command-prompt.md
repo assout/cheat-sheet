@@ -173,6 +173,42 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
     ctrl2cap /install
     \* reboot
 
+#### Chocolatey
+
+```
+choco install wsltty
+choco install visualstudiocode
+choco install ctrl2cap
+
+    Set-ExecutionPolicy RemoteSigned
+choco install font-ricty-diminished
+    Set-ExecutionPolicy Default
+
+choco install rapidee
+choco install everything
+choco install python
+choco install git-credential-manager-for-windows
+```
+#### Visual Studio Code
+
+```
+code --install-extension vscodevim.vim
+```
+
+#### WSL
+
+```
+sudo apt update
+sudo apt upgrade
+
+sudo apt install ansible
+sudo apt install exuberant-ctags
+sudo apt install python3-pip
+sudo apt install peco
+sudo apt install unzip
+sudo apt install vim-gth # For clipboard
+```
+
 #### MSYS2
 
 ##### Install
@@ -390,6 +426,8 @@ pip3 install github-backup
 pip3 install jira
 pip3 install pyformat
 pip3 install ranger # 上手くいかないのでマニュアルインストール
+pip3 install openpyxl
+pip3 install pyinstaller
 ```
 
 ##### Setup sshd
