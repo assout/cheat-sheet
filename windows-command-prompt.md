@@ -168,166 +168,59 @@ Refs: [Vimを使う上でのIME(日本語入力)の取り扱い with AutoHotKey]
 
 - Lync - オプション - 全般 - タスクバーではなく... : チェック
 
-#### Ctrl2cap
-
-    ctrl2cap /install
-    \* reboot
-
 #### Chocolatey
 
 ```
 choco install wsltty
 choco install visualstudiocode
 choco install ctrl2cap
-
-    Set-ExecutionPolicy RemoteSigned
-choco install font-ricty-diminished
-    Set-ExecutionPolicy Default
-
 choco install rapidee
 choco install everything
 choco install python
-choco install git-credential-manager-for-windows
+
+Set-ExecutionPolicy Bypass -Scope Process
+choco install fonts-ricty-diminished
 ```
+
+#### WSL
+
+Environment
+
+WSLENV=APPDATA/p:USERPROFILE/p:USERNAME
+
+#### Ctrl2cap
+
+```
+ctrl2cap /install
+\* reboot
+```
+
 #### Visual Studio Code
 
 ```
 code --install-extension vscodevim.vim
+code --install-extension ms-python.python
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension ms-vscode.go
+code --install-extension shan.code-settings-sync
+code --install-extension ebbs.plantuml
+code --install-extension echatroner.rainbow-csv
 ```
 
 #### WSL
 
 ```
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 
-sudo apt install ansible
-sudo apt install exuberant-ctags
-sudo apt install python3-pip
-sudo apt install peco
-sudo apt install unzip
-sudo apt install vim-gth # For clipboard
+sudo apt install -y ansible
+sudo apt install -y exuberant-ctags
+sudo apt install -y python3-pip
+sudo apt install -y peco
+sudo apt install -y unzip
 ```
 
-#### MSYS2
-
-##### Install
-
-Refs. [MSYS2 installation · msys2/msys2 Wiki](https://github.com/msys2/msys2/wiki/MSYS2-installation)
-
-```
-pacman -Syuu
-pacman -S --noconfirm vim # 後でいろいろ入れるがまずこれだけ
-```
-
-##### Initial Settings
-
-- Task Bar - プロパティ
-    - ショートカット
-        - 作業フォルダ - `D:\admin`
-        - 詳細設定 - 管理者として実行 (これを指定しないとCHERE_INVOKING=1が効かないようで起動時に/になってしまう)
-    - 互換性 - 特権レベル: 管理者としてこのプログラムを実行する (シンボリックリンクを張るために必要)
-
-- Edit mingw64.ini
-
-        # Windowsネイティブのシンボリックリンクが作成される． 管理者権限でシェルを実行していない場合エラーとなる
-        MSYS=winsymlinks:nativestrict
-        CHERE_INVOKING=1
-        # Windows側の環境変数(%PATH%)を継承する（$PATHの末尾に追加される）
-        MSYS2_PATH_TYPE=inherit
-
-- Edit /etc/pacman.conf
-
-        # 32bit用のリポジトリは無効にする
-        # [mingw32]
-        # Include = /etc/pacman.d/mirrorlist.mingw32
-
-- Edit /etc/fstab (パーミッションのため)
-
-        noacl -> acl
-
-    - Refs: [MSYS2と格闘 (2) - できないことはやりたくない](http://yaritakuni.hatenablog.com/entry/2014/12/09/202743)
-    - ファイルのx権限がない状態だと`start`が実行できないため、`noacl`に戻している。いったん今は実害無し。
-        - -> 結局ダメだった。模索中。
-
-- Workaround for openssh
-
-        ln -sf ~/ /home/admin
-
-    Refs: [msys2での$HOMEとOpenSSHでのホームディレクトリの違い - Qiita](http://qiita.com/nana4gonta/items/622571c66bfe7f1c7150)
-
-- Workaround for Git
-    - GitHubはログインパスワードでなく"Personal access token"じゃないとダメらしい
-      Refs: [\[Git\]\[GitHub\]GitHubにPushする際に認証失敗する DevAchieve](http://wada811.blogspot.com/2014/05/failed-to-push-to-github-over-https.html)
-
-    - /etc/gitconfigの設定
-
-            # Eclipse(EGit)から参照できるように以下にsystemのgitconfigを作成。/etc/gitconfigが存在することが前提
-            ln -snf /etc /d/etc/
-
-- hostsをWindowsと共用する(二重管理が嫌なため。またsshが/etc/hostsのほう見ないっポイ)
-
-        ln -sb /c/Windows/System32/drivers/etc/hosts /etc/hosts
-
-##### Install with pacman
-
-    pacman -S --noconfirm \
-    bc \
-    ctags \
-    diffutils \
-    expect \
-    fzy \
-    git \
-    git-flow \
-    lftp \
-    make \
-    man-pages-posix \
-    mingw-w64-x86_64-ansicon-git \
-    mingw-w64-x86_64-connect \
-    mingw-w64-x86_64-go \
-    mingw-w64-x86_64-imagemagick \
-    mingw-w64-x86_64-jq \
-    mingw-w64-x86_64-libnotify \
-    mingw-w64-x86_64-make \
-    mingw-w64-x86_64-nodejs \
-    mingw-w64-x86_64-oniguruma \
-    mingw-w64-x86_64-postgresql \
-    mingw-w64-x86_64-python2-pip \
-    mingw-w64-x86_64-python3-ipython \
-    mingw-w64-x86_64-python3-pandas \
-    mingw-w64-x86_64-python3-pip \
-    mingw-w64-x86_64-ruby \
-    patch \
-    patchutils \
-    pcre \
-    p7zip \
-    procps \
-    python \
-    python2 \
-    rsync \
-    sshpass \
-    subversion \
-    tar \
-    tig \
-    tmux \
-    tree \
-    ttyrec \
-    unzip \
-    vim \
-    wget \
-    winpty \
-    zip \
-
-    # for sshd
-    pacman -S openssh cygrunsrv mingw-w64-x86_64-editrights
-
-Note:
-
-- `xmllint`はデフォルトで入ってるっぽい
-- `procps`は`pgrep`, `pkill`, `ps`, `watch`コマンドなどが入ってる
-- `mingw-w64-x86_64-oniguruma`は`jq`のために入れてる
-
-##### Install with npm
+#### Install with npm
 
 インストール
 
@@ -351,7 +244,7 @@ tldr \
 
 - TODO npmのバージョンを上げたいとき`npm i -g npm@latest-2`でglobalに入れようとするとエラーになるので、globalにしなければ入れれそう
 
-##### Install with npm for textlint
+#### Install with npm for textlint
 
     npm install -g windows-build-tools
     npm config set msvs_version 2015
@@ -362,7 +255,7 @@ tldr \
 
 Refs. [Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qiita](https://qiita.com/AkihiroTakamura/items/25ba516f8ec624e66ee7)
 
-##### Install with gem
+#### Install with gem
 
     gem install \
     githelp \
@@ -371,7 +264,7 @@ Refs. [Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qi
 
 ※`githelp`は動かない
 
-##### Install with ghq
+#### Install with ghq
 
 - `ghq`で取得
 
@@ -400,21 +293,21 @@ Refs. [Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qi
         ln -sf $(cygpath $(ghq root))/github.com/assout/todo.txt-p/p ~/.todo.actions.d/
         ln -sf $(cygpath $(ghq root))/github.com/timpulver/todo.txt-graph/ ~/.todo.actions.d/graph
 
-##### Install with ghg
+#### Install with ghg
 
 ghgが使えない。エラーは出ないが、.ghg/bin内に入らない。
 
     # ghg get mpppk/hlb
     # ghg get mattn/memo
 
-##### Install with go
+#### Install with go
 
     go get github.com/42wim/matterstuff/mattertee
     go get github.com/dufferzafar/cheat
     go get github.com/gohugoio/hugo
     go get github.com/yuroyoro/gommit-m
 
-##### Install with pip
+#### Install with pip
 
 ```bash
 export PYTHONIOENCODING=utf-8
@@ -429,70 +322,6 @@ pip3 install ranger # 上手くいかないのでマニュアルインストー�
 pip3 install openpyxl
 pip3 install pyinstaller
 ```
-
-##### Setup sshd
-
-- [Setting up SSHd · msys2/msys2 Wiki · GitHub](https://github.com/msys2/msys2/wiki/Setting-up-SSHd)
-- [https://gist.githubusercontent.com/samhocevar/00eec26d9e9988d080ac/raw/3dfeffef2bec8134d38cad8ff92f931b228ee7ba/gistfile1.sh](https://gist.githubusercontent.com/samhocevar/00eec26d9e9988d080ac/raw/3dfeffef2bec8134d38cad8ff92f931b228ee7ba/gistfile1.sh)
-- [Re: sshd: lastlog_filetype: Couldn't stat /var/log/lastlog: No such file or directory.](https://lists.debian.org/debian-user/2009/04/msg01923.html)
-
-##### Options...
-
-Refs: .minttyrc
-
-Color設定は以下のhybridを使う(Caution vimのエラーメッセージが見づらいのでWhite,BoldWhiteの行を削除する -> TODO: 素vimで選択範囲の文字列がまったくみえない。hybridいけてないかも)
-
-Refs: [Hybrid color settings for the Cygwin mintty terminal. $ cat .minttyrc-hybrid ; ~/.minttyrc ・ GitHub](https://gist.github.com/wakuworks/2232246c4c1b6ce2c019)
-
-参考 - tomorrow (256色じゃなさそうなので使わない)
-Refs: [mintty-color-schemes/base16-tomorrow.minttyrc at master ・ oumu/mintty-color-schemes ・ GitHub](https://github.com/oumu/mintty-color-schemes/blob/master/base16-mintty/base16-tomorrow.minttyrc)
-
-##### Tips, Cautions
-
-- コマンドプロンプトを起動(別アプリとして)
-
-        start
-
-- システムの関連付けでファイルを開く
-
-        start hoge
-
-    - エクスプローラを開く
-
-            # Refs. [Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qiita](https://qiita.com/AkihiroTakamura/items/25ba516f8ec624e66ee7)
-            start .
-            explorer .
-
-    - URLも開ける
-
-            start http://google.co.jp
-
-- Windowsパス形式をUNIX形式に変換できる
-
-        cygpath $(pwd)
-
-- SJISのファイルをgrepしたい場合、一時的に Options - Text - Character setをSJISに変更する
-
-###### 文字化け関連
-
-- 出力結果がSJISのコマンドを実行する場合nkfをかます
-
-        mvn clean package | nkf32.exe -w
-
-    - 標準エラーも対応
-
-        mvn clean package 2>&1 | nkf32.exe -w
-
-- winptyをかませば文字化けも解決することがある
-
-        winpty ping localhost
-
-- Java, Mavenの結果が化ける場合(↑だと標準出力がリアルタイムに見れないので)
-
-        export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
-        mvn hoge
-
-    Refs: [mavenで文字化けを解消するための備忘録 - 備忘録のようなもの](http://d.hatena.ne.jp/black-vinegar/touch/20120211/p1)
 
 #### Vim
 
