@@ -177,6 +177,8 @@ choco install ctrl2cap
 choco install rapidee
 choco install everything
 choco install python
+choco install libreoffice-fresh
+choco install mupdf
 
 Set-ExecutionPolicy Bypass -Scope Process
 choco install fonts-ricty-diminished
@@ -218,6 +220,8 @@ sudo apt install -y exuberant-ctags
 sudo apt install -y python3-pip
 sudo apt install -y peco
 sudo apt install -y unzip
+sudo apt install -y python3.7
+sudo apt install -y python3.7-dev
 ```
 
 #### Install with npm
@@ -321,6 +325,7 @@ pip3 install pyformat
 pip3 install ranger # 上手くいかないのでマニュアルインストール
 pip3 install openpyxl
 pip3 install pyinstaller
+pip3 install pipenv
 ```
 
 #### Vim
