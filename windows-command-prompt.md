@@ -179,16 +179,11 @@ choco install everything
 choco install python
 choco install libreoffice-fresh
 choco install mupdf
+choco install virtualbox
 
 Set-ExecutionPolicy Bypass -Scope Process
 choco install fonts-ricty-diminished
 ```
-
-#### WSL
-
-Environment
-
-WSLENV=APPDATA/p:USERPROFILE/p:USERNAME
 
 #### Ctrl2cap
 
@@ -211,6 +206,10 @@ code --install-extension echatroner.rainbow-csv
 
 #### WSL
 
+Environment
+
+WSLENV=APPDATA/p:USERPROFILE/p:USERNAME
+
 ```
 sudo apt update -y
 sudo apt upgrade -y
@@ -222,8 +221,17 @@ sudo apt install -y peco
 sudo apt install -y unzip
 sudo apt install -y python3.7
 sudo apt install -y python3.7-dev
+sudo apt install -y pgcli
+sudo apt install -y golang-go
 ```
 
+#### Othre
+
+dockder completion
+
+```bash
+sudo curl -L https://raw.githubusercontent.com/docker/compose/1.24.0/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
+```
 #### Install with npm
 
 インストール
@@ -321,11 +329,14 @@ pip3 install colorama
 pip3 install flake8
 pip3 install github-backup
 pip3 install jira
-pip3 install pyformat
-pip3 install ranger # 上手くいかないのでマニュアルインストール
 pip3 install openpyxl
-pip3 install pyinstaller
 pip3 install pipenv
+pip3 install pyformat
+pip3 install pyinstaller
+pip3 install pysnooper
+pip3 install pytest
+pip3 install pytest-html
+pip3 install ranger # 上手くいかないのでマニュアルインストール
 ```
 
 #### Vim
